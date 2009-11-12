@@ -49,10 +49,10 @@ begin
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "muck-activities"
     gemspec.summary = "Activity engine for the muck system"
-    gemspec.email = "justinball@gmail.com"
+    gemspec.email = "justin@tatemae.com"
     gemspec.homepage = "http://github.com/tatemae/muck_activities"
     gemspec.description = "Activity engine for the muck system."
-    gemspec.authors = ["Justin Ball"]
+    gemspec.authors = ["Justin Ball", "Joel Duffin"]
     gemspec.rubyforge_project = 'muck-activities'
     gemspec.add_dependency "muck-engine"
     gemspec.add_dependency "muck-users"
@@ -63,5 +63,5 @@ begin
     rubyforge.doc_task = "rdoc"
   end
 rescue LoadError
-  puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
+  puts "Jeweler not available. Install it with: sudo gem install jeweler"
 end
