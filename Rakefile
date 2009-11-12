@@ -50,7 +50,7 @@ begin
     gemspec.name = "muck-activities"
     gemspec.summary = "Activity engine for the muck system"
     gemspec.email = "justinball@gmail.com"
-    gemspec.homepage = "http://github.com/jbasdf/muck_activities"
+    gemspec.homepage = "http://github.com/tatemae/muck_activities"
     gemspec.description = "Activity engine for the muck system."
     gemspec.authors = ["Justin Ball"]
     gemspec.rubyforge_project = 'muck-activities'
