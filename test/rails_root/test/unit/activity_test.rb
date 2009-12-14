@@ -3,6 +3,11 @@ require File.dirname(__FILE__) + '/../test_helper'
 class ActivityTest < ActiveSupport::TestCase
 
   context 'An Activity' do
+    setup do
+      @activity = Factory(:activity)
+    end
+    
+    subject { @activity }
     
     should_validate_presence_of :source
     
@@ -11,23 +16,17 @@ class ActivityTest < ActiveSupport::TestCase
     should_have_many :activity_feeds
     should_have_many :comments
     
-    should_have_named_scope :since
-    should_have_named_scope :before
-    should_have_named_scope :newest
-    should_have_named_scope :oldest
-    should_have_named_scope :latest
-    should_have_named_scope :only_public
-    should_have_named_scope :filter_by_template
-    #should_have_named_scope :created_by Throws an exception.  Test below
-    should_have_named_scope :status_updates
-    should_have_named_scope :by_item
+    should_scope_since
+    should_scope_before
+    should_scope_newest
+    should_scope_oldest
+    should_scope_latest
+    should_scope_only_public
   end
 
   context "named scopes" do
     setup do
       @user = Factory(:user)
-      @old_activity = Factory(:activity, :created_at => 6.weeks.ago)
-      @new_activity = Factory(:activity)
       @status_activity = Factory(:activity, :template => 'status')
       @other_activity = Factory(:activity, :template => 'other')
       @private_activity = Factory(:activity, :is_public => false)
@@ -35,18 +34,14 @@ class ActivityTest < ActiveSupport::TestCase
       @item_activity = Factory(:activity, :item => @user)
       @source_activity = Factory(:activity, :source => @user)
     end
-    context "before" do
-      should "only find old activity" do
-        activities = Activity.before(1.week.ago)
-        assert activities.include?(@old_activity), "since didn't find older activity"
-        assert !activities.include?(@new_activity), "since found new activity"
+    context "after" do
+      #named_scope :after, lambda { |id| {:conditions => ["activities.id > ?", id] } }
+      should "only find activites after the given id" do
       end
     end
-    context "since" do
-      should "only find new activity" do
-        activities = Activity.since(1.week.ago)
-        assert !activities.include?(@old_activity), "since found older activity"
-        assert activities.include?(@new_activity), "since didn't find new activity"
+    context "status_updates" do
+      #named_scope :status_updates, :conditions => ["activities.is_status_update = ?", true]
+      should "find only status updates" do
       end
     end
     context "filter_by_template" do
@@ -54,13 +49,6 @@ class ActivityTest < ActiveSupport::TestCase
         activities = Activity.filter_by_template('status')
         assert activities.include?(@status_activity), "since didn't find status activity"
         assert !activities.include?(@other_activity), "since found other activity"
-      end
-    end
-    context "public" do
-      should "only find public activities" do
-        activities = Activity.only_public
-        assert activities.include?(@public_activity), "only_public didn't find public activity"
-        assert !activities.include?(@private_activity), "only_public found private activity"
       end
     end
     context "by_item" do

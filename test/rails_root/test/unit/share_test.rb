@@ -9,6 +9,7 @@ class ShareTest < ActiveSupport::TestCase
       @share = Factory(:share)
       @share.add_share_activity([@user])
     end
+    subject { @share }
     should_have_many :activities
     should "delete activities if share is deleted" do
       assert_difference "Activity.count", -1 do

@@ -5,6 +5,7 @@ class UserTest < ActiveSupport::TestCase
     setup do
       @user = Factory(:user)
     end
+    subject { @user }
     should_have_many :activity_feeds
     should_have_many :activities
     should "create an activity" do

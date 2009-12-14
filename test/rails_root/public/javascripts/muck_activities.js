@@ -7,8 +7,7 @@ function apply_activity_ajax_methods(){
 	hide_comment_boxes();
 	apply_comment_hover();
 	apply_activity_hover();
-	jQuery('.activity-no-comments').hide();
-	
+	jQuery('.activity-no-comments').hide();	
 	jQuery('.activity-has-comments').find('textarea').click(function(){
 		show_comment_box(this);
 	});
@@ -19,6 +18,7 @@ function apply_activity_ajax_methods(){
 		}
 	});
 	
+	jQuery(".make-comment").unbind();
 	jQuery('.make-comment').click(function(){
 		var id = this.id.replace('make_comment_activity_', '');
 		var comment_box = jQuery('#comment_activity_' + id);
@@ -36,8 +36,11 @@ function apply_activity_ajax_methods(){
 }
 
 function setup_comment_submit(){
+	jQuery(".comment-submit").unbind();
 	jQuery(".comment-submit").click(function() {
-    jQuery(this).siblings('textarea').hide();
+    jQuery(this).hide();
+		jQuery(this).parents('.comment-form-wrapper').siblings('.actor-icon').hide();
+		jQuery(this).siblings('textarea').hide();
 		jQuery(this).parent().append('<p class="comment-loading"><img src="/images/spinner.gif" alt="loading..." /> ' + ADD_COMMENT_MESSAGE + '</p>');
 		var form = jQuery(this).parents('form');
     jQuery.post(form.attr('action'), form.serialize() + '&format=json',
@@ -46,9 +49,13 @@ function setup_comment_submit(){
         if(!json.success){
           jQuery.jGrowl.info(json.message);
         } else {
-					jQuery('.activity-comment').get(0).clone(true);
 					jQuery('.comment-loading').remove();
 					jQuery('.activity-has-comments').find('textarea').show();
+					var comment_box = jQuery('#comment_activity_' + json.parent_id);
+					comment_box.before(json.html);
+					comment_box.removeClass('activity-no-comments');
+					comment_box.addClass('activity-has-comments');
+					comment_box.find('textarea').show();
 					apply_activity_ajax_methods();
 				}
       });
@@ -83,12 +90,6 @@ function get_latest_activity_id(){
   }
 }
 
-function apply_comment_hover(){
-	jQuery('.activity-comment').hover(
-     function () { jQuery(this).addClass('comment-hover'); }, 
-     function () { jQuery(this).removeClass('comment-hover'); } );
-}
-
 function update_feed(request){
   jQuery('#activity-feed-content').prepend(request);
 }
@@ -97,4 +98,10 @@ function apply_activity_hover(){
 	jQuery('.activity-content').hover(
      function () { jQuery(this).addClass('activity-hover'); }, 
      function () { jQuery(this).removeClass('activity-hover'); } );
+}
+
+function apply_comment_hover(){
+	jQuery('.activity-comment').hover(
+     function () { jQuery(this).addClass('comment-hover'); }, 
+     function () { jQuery(this).removeClass('comment-hover'); } );
 }

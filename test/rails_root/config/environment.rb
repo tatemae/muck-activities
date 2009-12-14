@@ -17,10 +17,12 @@ Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
   config.gem "will_paginate"
   config.gem "authlogic"
-  config.gem "binarylogic-searchlogic", :lib => 'searchlogic', :source  => 'http://gems.github.com'
+  config.gem "geokit"
+  config.gem "sanitize"
+  config.gem "searchlogic"
   config.gem "bcrypt-ruby", :lib => "bcrypt"
   config.gem "awesome_nested_set"
-  config.gem 'thoughtbot-paperclip', :lib => 'paperclip', :source => "http://gems.github.com"
+  config.gem 'paperclip'
   config.gem 'muck-engine', :lib => 'muck_engine'
   config.gem 'muck-users', :lib => 'muck_users'
   config.gem 'muck-comments', :lib => 'muck_comments'
