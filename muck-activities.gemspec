@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2010-01-20}
+  s.date = %q{2010-02-08}
   s.description = %q{Activity engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -34,6 +34,9 @@ Gem::Specification.new do |s|
      "app/views/activities/_current_status_wrapper.html.erb",
      "app/views/activities/_status_update.html.erb",
      "app/views/activities/_template_filter.html.erb",
+     "app/views/activities/create.js.erb",
+     "app/views/activities/destroy.js.erb",
+     "app/views/activities/permission_denied.js.erb",
      "app/views/activity_templates/_generic.html.erb",
      "app/views/activity_templates/_status_update.html.erb",
      "config/muck_activities_routes.rb",
@@ -112,7 +115,8 @@ Gem::Specification.new do |s|
      "test/rails_root/app/models/user.rb",
      "test/rails_root/app/models/user_session.rb",
      "test/rails_root/app/views/default/index.html.erb",
-     "test/rails_root/app/views/layouts/default.html.erb",
+     "test/rails_root/app/views/layouts/global/_head.html.erb",
+     "test/rails_root/app/views/users/show.html.erb",
      "test/rails_root/config/amazon_s3.yml",
      "test/rails_root/config/boot.rb",
      "test/rails_root/config/database.yml",
@@ -411,6 +415,9 @@ Gem::Specification.new do |s|
      "test/rails_root/vendor/plugins/geokit-rails/test/schema.rb",
      "test/rails_root/vendor/plugins/geokit-rails/test/tasks.rake",
      "test/rails_root/vendor/plugins/geokit-rails/test/test_helper.rb",
+     "test/rails_root/vendor/plugins/ssl_requirement/README",
+     "test/rails_root/vendor/plugins/ssl_requirement/lib/ssl_requirement.rb",
+     "test/rails_root/vendor/plugins/ssl_requirement/test/ssl_requirement_test.rb",
      "uninstall.rb"
   ]
   s.homepage = %q{http://github.com/tatemae/muck_activities}
@@ -494,7 +501,9 @@ Gem::Specification.new do |s|
      "test/rails_root/vendor/plugins/geokit-rails/test/models/mock_person.rb",
      "test/rails_root/vendor/plugins/geokit-rails/test/models/store.rb",
      "test/rails_root/vendor/plugins/geokit-rails/test/schema.rb",
-     "test/rails_root/vendor/plugins/geokit-rails/test/test_helper.rb"
+     "test/rails_root/vendor/plugins/geokit-rails/test/test_helper.rb",
+     "test/rails_root/vendor/plugins/ssl_requirement/lib/ssl_requirement.rb",
+     "test/rails_root/vendor/plugins/ssl_requirement/test/ssl_requirement_test.rb"
   ]
 
   if s.respond_to? :specification_version then
