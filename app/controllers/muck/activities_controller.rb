@@ -55,9 +55,7 @@ class Muck::ActivitiesController < ApplicationController
         flash[:error] = message
         redirect_back_or_default(@parent)
       end
-      format.js do
-        render :js => message
-      end
+      format.js { render :js => message }
       format.json do
         render :json => { :success => false,
                           :exception => ex,
