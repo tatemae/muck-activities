@@ -31,12 +31,8 @@ class Muck::ActivitiesController < ApplicationController
       @status_html = ''
     end
     respond_to do |format|
-      format.js do
-        render :template => 'activities/create', :layout => false
-      end
-      format.html do
-        redirect_back_or_default(@parent)
-      end
+      format.js { render :template => 'activities/create', :layout => false }
+      format.html { redirect_back_or_default(@parent) }
       format.json do
         render :json => { :success => true,
                           :is_status_update => @activity.is_status_update,

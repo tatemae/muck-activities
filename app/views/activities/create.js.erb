@@ -1,6 +1,6 @@
-jQuery('#activity-feed-content').prepend('<%=escape_javascript(@activity_html)%>');
+jQuery('#activity-feed-content').prepend("<%=escape_javascript(@activity_html)%>");
 <% if @status_html -%>
-  jQuery('#current-status').html('<%=escape_javascript(@status_html)%>');
+  jQuery('#current-status').html("<%=escape_javascript(@status_html)%>");
 <% end -%>
 jQuery('<%=@activity.dom_id%>').effect("highlight", {}, 3000);
 jQuery('#status_update').val(\'\');
