@@ -1,0 +1,12 @@
+jQuery('#activity-feed-content').prepend('<%=escape_javascript(@activity_html)%>');
+<% if @status_html -%>
+  jQuery('#current-status').html('<%=escape_javascript(@status_html)%>');
+<% end -%>
+jQuery('<%=@activity.dom_id%>').effect("highlight", {}, 3000);
+jQuery('#status_update').val(\'\');
+jQuery('#status-update-field').removeClass('status-update-lit');
+jQuery('#status-update-field').addClass('status-update-dim');
+jQuery("#status-update-field").show();
+jQuery('#submit_status').show();
+jQuery('#progress-bar').hide();
+apply_activity_ajax_methods();

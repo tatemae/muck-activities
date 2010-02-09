@@ -23,6 +23,8 @@ Rails::Initializer.run do |config|
   config.gem "bcrypt-ruby", :lib => "bcrypt"
   config.gem "awesome_nested_set"
   config.gem 'paperclip'
+  config.gem 'uploader'
+  config.gem 'overlord'
   config.gem 'muck-engine', :lib => 'muck_engine'
   config.gem 'muck-users', :lib => 'muck_users'
   config.gem 'muck-comments', :lib => 'muck_comments'

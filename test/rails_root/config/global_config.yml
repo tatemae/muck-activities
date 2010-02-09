@@ -2,7 +2,10 @@
 
 default: &DEFAULT
 
+
   application_url: localhost:3000
+
+  admin_email: 'test@example.com'
   
   # session key information
   session_key: _muck_activities_session

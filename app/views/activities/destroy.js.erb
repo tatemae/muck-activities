@@ -1,0 +1,6 @@
+<% if @activity.is_status_update -%>
+  jQuery('#<%=@activity.dom_id%>').fadeOut();
+  jQuery('#current-status').html('<%=@new_status%>');
+<% else -%>
+  jQuery('#<%=@activity.dom_id%>').fadeOut();
+<% end -%>

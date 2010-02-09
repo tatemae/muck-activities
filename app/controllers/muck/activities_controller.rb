@@ -32,19 +32,7 @@ class Muck::ActivitiesController < ApplicationController
     end
     respond_to do |format|
       format.js do
-        render :update do |page|
-          page.insert_html :top, 'activity-feed-content', @activity_html
-          page.replace_html 'current-status', @status_html if @status_html
-          page.visual_effect :highlight, "#{@activity.dom_id}".to_sym
-          page << 'jQuery("#status_update").val(\'\');'
-          page << "jQuery('#status-update-field').removeClass('status-update-lit');"
-          page << "jQuery('#status-update-field').addClass('status-update-dim');" 
-          page << 'jQuery("#status-update-field").show();'
-          page << 'jQuery("#submit_status").show();'
-          page << 'jQuery("#progress-bar").hide();'
-          page << 'setup_submit_delete();'
-          page << 'apply_activity_ajax_methods();'
-        end
+        render :template => 'activities/create', :layout => false
       end
       format.html do
         redirect_back_or_default(@parent)
@@ -72,7 +60,7 @@ class Muck::ActivitiesController < ApplicationController
         redirect_back_or_default(@parent)
       end
       format.js do
-        render :text => message
+        render :js => message
       end
       format.json do
         render :json => { :success => false,
@@ -92,17 +80,8 @@ class Muck::ActivitiesController < ApplicationController
         redirect_back_or_default(@activities_object)
       end
       format.js do
-        if @activity.is_status_update
-          @new_status = get_status_html(@activities_object)
-          render(:update) do |page|
-            page << "jQuery('##{@activity.dom_id}').fadeOut();"
-            page.replace_html 'current-status', @new_status if @new_status
-          end
-        else
-          render(:update) do |page|
-            page << "jQuery('##{@activity.dom_id}').fadeOut();"
-          end
-        end
+        @new_status = get_status_html(@activities_object) if @activity.is_status_update
+        render :template => 'activities/destroy', :layout => false
       end
       format.json do
         @new_status = get_status_html(@activities_object) if @activity.is_status_update
@@ -119,9 +98,7 @@ class Muck::ActivitiesController < ApplicationController
         flash[:notice] = t("muck.activities.item_could_not_be_removed")
         redirect_back_or_default(current_user)
       end
-      format.js do
-        render(:update){ |page| page_alert(page, t("muck.activities.item_could_not_be_removed")) }
-      end
+      format.js { render :text => page_alert(t("muck.activities.item_could_not_be_removed")) }
       format.json { render :json => { :success => false, :message => t("muck.activities.item_could_not_be_removed") } }
     end
   end
@@ -159,7 +136,7 @@ class Muck::ActivitiesController < ApplicationController
           flash[:notice] = t("muck.activities.permission_denied")
           redirect_back_or_default(current_user)
         end
-        format.js { render(:update){|page| page_alert(page, t("muck.activities.permission_denied"))}}
+        format.js { render :template => 'activities/permission_denied' }
       end
     end
   end
