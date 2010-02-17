@@ -2,33 +2,33 @@
 th: 
   muck: 
     activities: 
-      activity_feed_title: กิจกรรมล่าสุด
-      add_photos: เพิ่มภาพถ่าย
-      add_videos: วิดีโอแบ่งปัน
-      adding_comment_message: "เพิ่มความคิดเห็น ..."
-      all_activities: กิจกรรมทั้งหมด
+      activity_feed_title: "กิจกรรม ล่าสุด"
+      add_photos: "เพิ่ม ภาพถ่าย"
+      add_videos: "วิดีโอ แบ่งปัน"
+      adding_comment_message: "เพิ่ม ความ คิดเห็น ..."
+      all_activities: "กิจกรรม ทั้งหมด"
       clear: ชัดเจน
-      create_error: "มีปัญหาเพิ่มกิจกรรมขอ: {{error}} คือ"
+      create_error: "มี ปัญหา เพิ่ม กิจกรรม ขอ: {{error}} คือ"
       delete: ลบ
-      invite_friends: เชิญเพื่อน
-      item_could_not_be_removed: รายการที่ไม่สามารถออกจากรายชื่อกิจกรรมล่าสุด.
-      item_created: กิจกรรมเพิ่ม
-      item_removed: รายการลบสำเร็จจากรายการกิจกรรมล่าสุด.
+      invite_friends: "เชิญ เพื่อน"
+      item_could_not_be_removed: "รายการ ที่ ไม่ สามารถ ออก จาก ราย ชื่อ กิจกรรม ล่าสุด."
+      item_created: "กิจกรรม เพิ่ม"
+      item_removed: "รายการ ลบ สำเร็จ จาก รายการ กิจกรรม ล่าสุด."
       joined_status: "{{name}} ร่วม {{application_name}}"
-      make_comment: ความคิดเห็น
-      paging_newer: «ใหม่กว่า
-      paging_older: "เก่ากว่า »"
-      permission_denied: ขออภัยคุณไม่สามารถทำ.
+      make_comment: "ความ คิดเห็น"
+      paging_newer: "«ใหม่ กว่า"
+      paging_older: "เก่า กว่า »"
+      permission_denied: "ขออภัย คุณ ไม่ สามารถ ทำ."
       post: แบ่งปัน
-      problem_with_status: มีปัญหาการเปลี่ยนสถานะของคุณคือ
+      problem_with_status: "มี ปัญหา การ เปลี่ยน สถานะ ของ คุณ คือ"
       status_indicator: เป็น
-      status_update_prompt: คุณกำลังทำตอนนี้?
-      template_or_item_required: กิจกรรมที่ต้องใช้แม่แบบหรือรายการที่จะแสดงอย่างถูกต้อง
-      update_error: "โอ๊ะ ... มีปัญหาคือ. {{errors}}"
-      update_status_message: "update สถานะของคุณ"
-      updating_status_message: "ปรับปรุงสถานะของ. โปรดรอ."
-      upload_files: อัปโหลดไฟล์
+      status_update_prompt: "คุณ กำลัง ทำ ตอน นี้?"
+      template_or_item_required: "กิจกรรม ที่ ต้อง ใช้ แม่ แบบ หรือ รายการ ที่ จะ แสดง อย่าง ถูก ต้อง"
+      update_error: "โอ๊ะ ... มี ปัญหา คือ. {{errors}}"
+      update_status_message: "update สถานะ ของ คุณ"
+      updating_status_message: "ปรับปรุง สถานะ ของ. โปรด รอ."
+      upload_files: "อัป โหลด ไฟล์"
       write: เขียน
-      write_prompt: "เขียนความคิดเห็น ..."
+      write_prompt: "เขียน ความ คิดเห็น ..."
     activity_templates: 
-      status_update: ปรับปรุงสถานะ
+      status_update: "ปรับปรุง สถานะ"

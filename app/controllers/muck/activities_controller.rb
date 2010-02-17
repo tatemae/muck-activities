@@ -92,7 +92,7 @@ class Muck::ActivitiesController < ApplicationController
         flash[:notice] = t("muck.activities.item_could_not_be_removed")
         redirect_back_or_default(current_user)
       end
-      format.js { render :text => page_alert(t("muck.activities.item_could_not_be_removed")) }
+      format.js { page_alert(t("muck.activities.item_could_not_be_removed")) }
       format.json { render :json => { :success => false, :message => t("muck.activities.item_could_not_be_removed") } }
     end
   end
@@ -130,7 +130,7 @@ class Muck::ActivitiesController < ApplicationController
           flash[:notice] = t("muck.activities.permission_denied")
           redirect_back_or_default(current_user)
         end
-        format.js { render :template => 'activities/permission_denied' }
+        format.js { page_alert(t("muck.activities.permission_denied")) }
       end
     end
   end
