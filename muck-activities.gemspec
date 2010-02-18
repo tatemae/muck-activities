@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2010-02-09}
+  s.date = %q{2010-02-17}
   s.description = %q{Activity engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -36,7 +36,6 @@ Gem::Specification.new do |s|
      "app/views/activities/_template_filter.html.erb",
      "app/views/activities/create.js.erb",
      "app/views/activities/destroy.js.erb",
-     "app/views/activities/permission_denied.js.erb",
      "app/views/activity_templates/_generic.html.erb",
      "app/views/activity_templates/_status_update.html.erb",
      "config/muck_activities_routes.rb",
