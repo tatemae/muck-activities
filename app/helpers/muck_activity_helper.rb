@@ -37,7 +37,7 @@ module MuckActivityHelper
   # limited: a value passed to each activity template which can result in a smaller amount of data 
   #          being rendered
   def limited_activity_feed_for(activities_object, limited = false)
-    activities = activities_object.activities.latest.created_by(activities_object).only_public.find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
+    activities = activities_object.activities.by_latest.created_by(activities_object).only_public.find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
     render :partial => 'activities/activity_feed', :locals => { :activities_object => activities_object, :activities => activities, :limited => limited }
   end
   
@@ -110,17 +110,17 @@ module MuckActivityHelper
   
   def get_profile_activities(activities_object)
     if !params[:latest_activity_id].blank?
-      activities_object.activities.latest.filter_by_template(params[:activity_filter]).after(params[:latest_activity_id]).only_public.created_by(activities_object).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
+      activities_object.activities.by_latest.filter_by_template(params[:activity_filter]).after(params[:latest_activity_id]).only_public.created_by(activities_object).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
     else
-      activities_object.activities.latest.filter_by_template(params[:activity_filter]).only_public.created_by(activities_object).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
+      activities_object.activities.by_latest.filter_by_template(params[:activity_filter]).only_public.created_by(activities_object).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
     end
   end
   
   def get_activities(activities_object)
     if !params[:latest_activity_id].blank?
-      activities_object.activities.latest.filter_by_template(params[:activity_filter]).after(params[:latest_activity_id]).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
+      activities_object.activities.by_latest.filter_by_template(params[:activity_filter]).after(params[:latest_activity_id]).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
     else
-      activities_object.activities.latest.filter_by_template(params[:activity_filter]).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
+      activities_object.activities.by_latest.filter_by_template(params[:activity_filter]).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
     end
   end
 
