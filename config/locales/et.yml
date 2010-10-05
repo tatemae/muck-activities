@@ -8,13 +8,13 @@ et:
       adding_comment_message: "Lisamine kommentaar ..."
       all_activities: "Kõik Tegevus"
       clear: Selge
-      create_error: "Probleem lisades nõutud aktiivsus: {{error}}"
+      create_error: "Probleem lisades nõutud aktiivsus: %{error}"
       delete: Kustutama
       invite_friends: "Kutsu sõpru"
       item_could_not_be_removed: "Punkt ei saa eemaldada hiljuti tegevuse loetelu."
       item_created: "Lisatud aktiivsus"
       item_removed: "Punkt edukalt eemaldatud hiljuti tegevuse loetelu."
-      joined_status: "{{name}} Liitunud {{application_name}}"
+      joined_status: "%{name}} Liitunud %{application_name}"
       make_comment: Kommentaar
       paging_newer: «Uuemad
       paging_older: "Vanemad »"
@@ -24,7 +24,7 @@ et:
       status_indicator: "on"
       status_update_prompt: "Mida sa teed praegu?"
       template_or_item_required: "Tegevus eeldab malli või toode kuvata õigesti"
-      update_error: "Oih ... Tekkis probleem. {{errors}}"
+      update_error: "Oih ... Tekkis probleem. %{errors}"
       update_status_message: "uuenda oma staatust!"
       updating_status_message: "Uuendan oma olekut. Palun oota."
       upload_files: "Faile üles laadida"

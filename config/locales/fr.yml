@@ -8,13 +8,13 @@ fr:
       adding_comment_message: "Ajout de commentaire ..."
       all_activities: "Toutes les activités"
       clear: Clair
-      create_error: "Il y avait un problème en ajoutant l&#39;activité demandée: {{error}}"
+      create_error: "Il y avait un problème en ajoutant l&#39;activité demandée: %{error}"
       delete: Supprimer
       invite_friends: "Inviter des amis"
       item_could_not_be_removed: "Élément n&#39;a pas pu être retirés de la liste des activités récentes."
       item_created: "Ajouté activité"
       item_removed: "Article supprimé de la liste des activités récentes."
-      joined_status: "{{name}} Rejoint {{application_name}}"
+      joined_status: "%{name}} Rejoint %{application_name}"
       make_comment: Commentaire
       paging_newer: «Newer
       paging_older: "Older »"
@@ -24,7 +24,7 @@ fr:
       status_indicator: est
       status_update_prompt: "Que fais-tu maintenant?"
       template_or_item_required: "Une activité requiert un modèle ou un élément pour afficher correctement"
-      update_error: "Erreur ... Il y avait un problème. {{errors}}"
+      update_error: "Erreur ... Il y avait un problème. %{errors}"
       update_status_message: "mettre à jour votre statut!"
       updating_status_message: "Mettre à jour votre statut. S&#39;il vous plaît attendre."
       upload_files: "Upload Files"

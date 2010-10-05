@@ -8,13 +8,13 @@ th:
       adding_comment_message: "เพิ่ม ความ คิดเห็น ..."
       all_activities: "กิจกรรม ทั้งหมด"
       clear: ชัดเจน
-      create_error: "มี ปัญหา เพิ่ม กิจกรรม ขอ: {{error}} คือ"
+      create_error: "มี ปัญหา เพิ่ม กิจกรรม ขอ: %{error} คือ"
       delete: ลบ
       invite_friends: "เชิญ เพื่อน"
       item_could_not_be_removed: "รายการ ที่ ไม่ สามารถ ออก จาก ราย ชื่อ กิจกรรม ล่าสุด."
       item_created: "กิจกรรม เพิ่ม"
       item_removed: "รายการ ลบ สำเร็จ จาก รายการ กิจกรรม ล่าสุด."
-      joined_status: "{{name}} ร่วม {{application_name}}"
+      joined_status: "%{name}} ร่วม %{application_name}"
       make_comment: "ความ คิดเห็น"
       paging_newer: "«ใหม่ กว่า"
       paging_older: "เก่า กว่า »"
@@ -24,7 +24,7 @@ th:
       status_indicator: เป็น
       status_update_prompt: "คุณ กำลัง ทำ ตอน นี้?"
       template_or_item_required: "กิจกรรม ที่ ต้อง ใช้ แม่ แบบ หรือ รายการ ที่ จะ แสดง อย่าง ถูก ต้อง"
-      update_error: "โอ๊ะ ... มี ปัญหา คือ. {{errors}}"
+      update_error: "โอ๊ะ ... มี ปัญหา คือ. %{errors}"
       update_status_message: "update สถานะ ของ คุณ"
       updating_status_message: "ปรับปรุง สถานะ ของ. โปรด รอ."
       upload_files: "อัป โหลด ไฟล์"

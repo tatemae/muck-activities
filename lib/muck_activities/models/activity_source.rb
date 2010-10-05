@@ -7,7 +7,7 @@ module MuckActivities
     module ActivitySource
     
       # +add_activity+ adds an activity to all activites feeds that belong to the objects found in feed_to.
-      # * +feed_to+: an array of objects that have +MuckActivities::Models::ActivityConsumer+ declared on them.  The generated activity
+      # * +feed_to+: an array of objects that have +include MuckActivities::Models::ActivityConsumer+ declared on them.  The generated activity
       #   will be pushed into the feed of each of these objects.
       # * +source+: the object that peformed the activity ie a user or group
       # * +item+: an object that will be used to generated the entry in an activity feed

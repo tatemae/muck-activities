@@ -10,7 +10,7 @@ module MuckActivities
         belongs_to :attachable, :polymorphic => true
         has_many :activity_feeds, :dependent => :destroy
       
-        include MuckComments::Models::Commentable
+        include ::MuckComments::Models::Commentable
 
         validates_presence_of :source
 

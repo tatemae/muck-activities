@@ -8,13 +8,13 @@ hu:
       adding_comment_message: "Hozzáadása comment ..."
       all_activities: "Minden tevékenység"
       clear: Világos
-      create_error: "Probléma merült fel a hozzá adott tevékenységet: {{error}}"
+      create_error: "Probléma merült fel a hozzá adott tevékenységet: %{error}"
       delete: Töröl
       invite_friends: "Invite Friends"
       item_could_not_be_removed: "Elem nem távolítható el a közelmúltban tevékenységek listáját."
       item_created: "Added tevékenység"
       item_removed: "Cikk sikeresen eltávolították a jelenlegi tevékenységét listán."
-      joined_status: "{{name}} Csatlakozott {{application_name}}"
+      joined_status: "%{name}} Csatlakozott %{application_name}"
       make_comment: Megjegyzést
       paging_newer: «Újabb
       paging_older: "Older »"
@@ -24,7 +24,7 @@ hu:
       status_indicator: van
       status_update_prompt: "Mit csinálsz most?"
       template_or_item_required: "Egy tevékenységet igényel egy sablont vagy egy elem helyes megjelenítését"
-      update_error: "Hoppá ... Volt egy kis probléma. {{errors}}"
+      update_error: "Hoppá ... Volt egy kis probléma. %{errors}"
       update_status_message: "frissítse a helyzet!"
       updating_status_message: "Frissítését státuszát. Kérem, várjon."
       upload_files: "Upload Files"

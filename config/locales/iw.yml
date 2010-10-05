@@ -8,13 +8,13 @@ iw:
       adding_comment_message: "הוספת תגובה ..."
       all_activities: ענפי
       clear: ברור
-      create_error: "היתה בעיה להוסיף את פעילות המבוקש: {{error}}"
+      create_error: "היתה בעיה להוסיף את פעילות המבוקש: %{error}"
       delete: למחוק
       invite_friends: "הזמן חברים"
       item_could_not_be_removed: "לא יכול להיות פריט מרשימת הפעילויות האחרונות."
       item_created: "פעילות נוסף"
       item_removed: "פריט בהצלחה מרשימת הפעילויות האחרונות."
-      joined_status: "{{name}} הצטרף {{application_name}}"
+      joined_status: "%{name}} הצטרף %{application_name}"
       make_comment: תגובה
       paging_newer: "«חדש יותר"
       paging_older: "ישן יותר »"
@@ -24,7 +24,7 @@ iw:
       status_indicator: הוא
       status_update_prompt: "מה אתה עושה עכשיו?"
       template_or_item_required: "פעילות דורש תבנית או פריט כדי להציג כראוי"
-      update_error: "אופס ... היתה בעיה. {{errors}}"
+      update_error: "אופס ... היתה בעיה. %{errors}"
       update_status_message: "עדכון מצב שלך!"
       updating_status_message: "עדכון מצב שלך. אנא המתן."
       upload_files: "לטעון קבצים"

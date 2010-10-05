@@ -8,7 +8,7 @@ module MuckActivities
       'muck-activities'
     end
     
-    initializer 'muck_users.helpers' do
+    initializer 'muck_activities.helpers' do
       ActiveSupport.on_load(:action_view) do
         include MuckActivityHelper
       end

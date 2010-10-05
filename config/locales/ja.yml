@@ -8,13 +8,13 @@ ja:
       adding_comment_message: コメントを追加する...
       all_activities: 全ての活動
       clear: 片付ける
-      create_error: "ある問題は、要求されたアクティビティを追加する：{{error}}された"
+      create_error: "ある問題は、要求されたアクティビティを追加する：%{error}された"
       delete: 削除する
       invite_friends: 友達を招待する
       item_could_not_be_removed: アイテムの最近の活動をリストから削除することができませんでした。
       item_created: 追加の活動
       item_removed: アイテムが正常に最近の活動をリストから削除されます。
-      joined_status: "{{name}} {{application_name}}に参加しました"
+      joined_status: "%{name}} %{application_name}に参加しました"
       make_comment: コメント
       paging_newer: «新しい
       paging_older: 古い»
@@ -24,7 +24,7 @@ ja:
       status_indicator: なる
       status_update_prompt: あなたが今何してるの？
       template_or_item_required: アクティビティやアイテムを正しく表示するためのテンプレートが必要です
-      update_error: "おっと...問題が発生しました。 {{errors}}"
+      update_error: "おっと...問題が発生しました。 %{errors}"
       update_status_message: 自分のステータスを更新！
       updating_status_message: あなたのステータスを更新します。しばらくお待ちください。
       upload_files: ファイルをアップロード

@@ -10,11 +10,11 @@ This should also install the dependencies.
 == Usage
 This engine implements simple activity tracking. 
 
-Models that can have activity feed should call 'MuckActivities::Models::ActivityConsumer'
+Models that can have activity feed should call 'include MuckActivities::Models::ActivityConsumer'
 
   Example:
     class User
-      MuckActivities::Models::ActivityConsumer
+      include MuckActivities::Models::ActivityConsumer
     end
 
 Adding an item to the activity feed requires 'MuckActivities::Models::ActivitySource' which then profiles the method 'add_activity'
@@ -30,10 +30,10 @@ Adding an item to the activity feed requires 'MuckActivities::Models::ActivitySo
   Example:
     add_activity(user.feed_to, user, comment, 'comment')
 
-Create an activity model that 'acts_as_muck_activity':
+Create an activity model that 'include MuckActivities::Models::Activity':
 
   class Activity < ActiveRecord::Base
-    acts_as_muck_activity
+    include MuckActivities::Models::Activity
   end
 
 === CSS
@@ -42,7 +42,7 @@ You can include that file in your layout or copy it and modify it to meet your n
 (Don't change the file as each time you run rake muck:activities:sync it will overwrite any changes you might have made.)
 
 === Authorization
-By default 'MuckActivities::Models::ActivityConsumer' will add a simple 'can_view?' method:
+Adding 'include MuckActivities::Models::ActivityConsumer' to your model will add a simple 'can_view?' method:
 
   def can_view?(check_object)
     self == check_object
@@ -63,21 +63,20 @@ you might add a can_view? method like this:
   end
 
 == Configuration
-If you would like to enable comments for your project's activities feeds you can do so by adding an entry to GlobalConfig.yml (configuration file added by muck)
+Add the following to an initializer:
 
-  enable_activity_comments: true
+MuckActivities.configure do |config|
+  config.enable_activity_comments = true     # Enable if you would like to enable comments for your project's activities feeds
+  config.enable_live_activity_updates = true # Turns on polling inside the user's activity feed so they constantly get updates from the site
+  config.live_activity_update_interval = 60  # Time between updates to live activity feed in seconds
+                                             # Note that this will poll the server every 60 seconds and so will increase server load and bandwidth usage.
+  config.enable_activity_shares = true       # Turn on shares in the activity feed
 
-If you would like to add live updates to the user's activity feed you can do so by adding an entry to GlobalConfig.yml (configuration file added by muck)
-
-  enable_live_activity_updates: true
-  live_activity_update_interval: 5
-
-You can also use the 'contribute' helper method to render a richer status update if you have uploader installed and configured:
-  enable_activity_file_uploads: true # Turn on file uploads in the activity feed.  Requires that uploader be installed.
-  enable_activity_image_uploads: true # Turn on image uploads in the activity feed.  Requires that uploader and muck_albums be installed.
-  enable_activity_video_sharing: true # Turn on video sharing in the activity feed.
-  
-Note that this will poll the server every 5 seconds and so will increase server load and bandwidth usage.
+  # You can also use the 'contribute' helper method to render a richer status update if you have uploader installed and configured:
+  config.enable_activity_file_uploads = true # Turn on file uploads in the activity feed.  Requires that uploader be installed.
+  config.enable_activity_image_uploads = true # Turn on image uploads in the activity feed.  Requires that uploader and muck_albums be installed.
+  config.enable_activity_video_sharing = true # Turn on video sharing in the activity feed.
+end
 
 == Development
 
@@ -100,4 +99,4 @@ need to do:
   add_activity(user.feed_to, user, comment, 'comment')
 
 
-Copyright (c) 2009 Tatemae.com, released under the MIT license
+Copyright (c) 2009-2010 Tatemae.com, released under the MIT license

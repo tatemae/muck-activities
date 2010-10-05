@@ -8,13 +8,13 @@ tl:
       adding_comment_message: "Pagdaragdag ng puna ..."
       all_activities: "Lahat ng mga gawain"
       clear: Malinaw
-      create_error: "Nagkaroon ng problema ang pagdaragdag ng hiniling na aktibidad: {{error}}"
+      create_error: "Nagkaroon ng problema ang pagdaragdag ng hiniling na aktibidad: %{error}"
       delete: Tanggalin
       invite_friends: "Imbitahan ang mga Kaibigan"
       item_could_not_be_removed: "Item ay hindi maaaring tanggalin mula sa listahan ng mga kamakailan-lamang na mga gawain."
       item_created: "Added aktibidad"
       item_removed: "Item matagumpay na tinanggal mula sa listahan ng mga kamakailan-lamang na mga gawain."
-      joined_status: "{{name}} Sumali {{application_name}}"
+      joined_status: "%{name}} Sumali %{application_name}"
       make_comment: Comment
       paging_newer: "«Mas bagong"
       paging_older: "Mas luma »"
@@ -24,7 +24,7 @@ tl:
       status_indicator: ay
       status_update_prompt: "Ano ang ginagawa mo ngayon?"
       template_or_item_required: "Ang aktibidad ay nangangailangan ng isang template o isang bagay upang ipakita ang tama"
-      update_error: "Oops ... Nagkaroon ng problema. {{errors}}"
+      update_error: "Oops ... Nagkaroon ng problema. %{errors}"
       update_status_message: "i-update ang iyong katayuan!"
       updating_status_message: "Ina-update ang iyong kalagayan. Mangyaring maghintay."
       upload_files: "Mag-upload ng file"

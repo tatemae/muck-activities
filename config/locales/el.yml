@@ -8,13 +8,13 @@ el:
       adding_comment_message: "Προσθήκη σχόλιο ..."
       all_activities: "Όλες οι δραστηριότητες"
       clear: Καθαρός
-      create_error: "Υπήρξε ένα πρόβλημα με προσθήκη του ζήτησε δραστηριότητα: {{error}}"
+      create_error: "Υπήρξε ένα πρόβλημα με προσθήκη του ζήτησε δραστηριότητα: %{error}"
       delete: Διαγράφω
       invite_friends: "Προσκαλέστε τους φίλους"
       item_could_not_be_removed: "Το σημείο δεν μπορούσε να αφαιρεθεί από την πρόσφατη τον κατάλογο των δραστηριοτήτων."
       item_created: "Προστέθηκε δραστηριότητα"
       item_removed: "Θέση επιτυχώς αφαιρεθεί από την πρόσφατη κατάλογο των δραστηριοτήτων."
-      joined_status: "{{name}} Προσχώρησαν {{application_name}}"
+      joined_status: "%{name}} Προσχώρησαν %{application_name}"
       make_comment: Σχόλιο
       paging_newer: «Νεότερο
       paging_older: "Παλαιότερο »"
@@ -24,7 +24,7 @@ el:
       status_indicator: είναι
       status_update_prompt: "Τι κάνεις τώρα;"
       template_or_item_required: "Μια δραστηριότητα απαιτεί ένα πρότυπο ή ένα στοιχείο για να εμφανιστεί σωστά"
-      update_error: "Ωχ ... Υπήρξε ένα πρόβλημα. {{errors}}"
+      update_error: "Ωχ ... Υπήρξε ένα πρόβλημα. %{errors}"
       update_status_message: "ενημερώσετε την κατάστασή σας!"
       updating_status_message: "Ενημέρωση κατάστασή σας. Παρακαλώ περιμένετε."
       upload_files: "Upload Files"

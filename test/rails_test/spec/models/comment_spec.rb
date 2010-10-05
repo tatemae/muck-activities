@@ -17,7 +17,7 @@ describe Comment do
   it { should scope_by_oldest }
   it { should scope_newer_than }
   
-  it "shouldrequire body" do
+  it "should require body" do
     assert_no_difference 'Comment.count' do
       u = Factory.build(:comment, :body => nil)
       assert !u.valid?

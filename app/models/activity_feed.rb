@@ -9,8 +9,6 @@
 #
 
 class ActivityFeed < ActiveRecord::Base
-  unloadable
-  
   belongs_to :activity
   belongs_to :ownable, :polymorphic => true
 end
