@@ -1,17 +1,16 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-class UserTest < ActiveSupport::TestCase
+describe User do
   describe "activities" do
     before do
       @user = Factory(:user)
     end
-    subject { @user }
     it { should have_many :activity_feeds }
     it { should have_many :activities }
-    it "shouldcreate an activity" do
-      assert_difference "Activity.count", 1 do
+    it "should create an activity" do
+      lambda {
         @user.add_activity(@user.feed_to, @user, @user, 'status_update', 'status', 'a status update')
-      end
+      }.should change(Activity, :count)
     end
     it "should set the user's current status" do
       activity = @user.add_activity(@user.feed_to, @user, @user, 'status_update', 'status', 'a status update')

@@ -55,6 +55,11 @@ PATH
 PATH
   remote: /Users/jbasdf/projects/muck-shares
   specs:
+    muck-shares (3.0.0)
+      muck-activities
+      muck-comments
+      muck-engine
+      muck-users
 
 PATH
   remote: /Users/jbasdf/projects/muck-users
@@ -161,11 +166,6 @@ GEM
       treetop (>= 1.4.5)
     mime-types (1.16)
     muck-raker (0.3.18)
-    muck-shares (0.1.8)
-      muck-activities
-      muck-comments
-      muck-engine
-      muck-users
     muck-solr (0.4.7)
     mysql (2.8.1)
     nested_set (1.5.2)

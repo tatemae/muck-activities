@@ -3,32 +3,32 @@ et:
   muck: 
     activities: 
       activity_feed_title: "Recent Activity"
-      add_photos: "Lisa pilte"
+      add_photos: "Lisa fotod"
       add_videos: "Jaga Videod"
-      adding_comment_message: "Lisamine kommentaar ..."
-      all_activities: "Kõik Tegevus"
+      adding_comment_message: "Lisades kommentaar ..."
+      all_activities: "Kõik tegevused"
       clear: Selge
-      create_error: "Probleem lisades nõutud aktiivsus: %{error}"
-      delete: Kustutama
+      create_error: "Seal oli probleem lisades nõutud aktiivsus: %{error}"
+      delete: Kustuta
       invite_friends: "Kutsu sõpru"
-      item_could_not_be_removed: "Punkt ei saa eemaldada hiljuti tegevuse loetelu."
-      item_created: "Lisatud aktiivsus"
-      item_removed: "Punkt edukalt eemaldatud hiljuti tegevuse loetelu."
-      joined_status: "%{name}} Liitunud %{application_name}"
-      make_comment: Kommentaar
-      paging_newer: «Uuemad
+      item_could_not_be_removed: "Punkt ei saa eemaldada viimase aja tegemisi nimekirja."
+      item_created: "Lisatud tegevus"
+      item_removed: "Punkt edukalt eemaldatud hiljuti tegevust nimekirja."
+      joined_status: "%{name}} Liitus %{application_name}"
+      make_comment: Kommenteeri
+      paging_newer: «Uuem
       paging_older: "Vanemad »"
-      permission_denied: "Vabandame, sa ei saa seda teha."
-      post: Jagama
-      problem_with_status: "Probleem, muutes oma staatust"
+      permission_denied: "Vabandame, aga te ei saa seda teha."
+      post: Jaga
+      problem_with_status: "Seal oli probleem muutes oma olekut"
       status_indicator: "on"
       status_update_prompt: "Mida sa teed praegu?"
-      template_or_item_required: "Tegevus eeldab malli või toode kuvata õigesti"
-      update_error: "Oih ... Tekkis probleem. %{errors}"
+      template_or_item_required: "Tegevus eeldab malli või kirje kuvada õigesti"
+      update_error: "Oih ... Seal oli probleem. %{errors}"
       update_status_message: "uuenda oma staatust!"
-      updating_status_message: "Uuendan oma olekut. Palun oota."
-      upload_files: "Faile üles laadida"
-      write: Kirjutama
-      write_prompt: "Write a comment ..."
+      updating_status_message: "Uuendan oma staatust. Palun oota."
+      upload_files: "Failide üleslaadimine"
+      write: Kirjutada
+      write_prompt: "Kirjuta kommentaar ..."
     activity_templates: 
       status_update: "Status uuendused"

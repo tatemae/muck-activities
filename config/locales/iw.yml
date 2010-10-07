@@ -2,33 +2,33 @@
 iw: 
   muck: 
     activities: 
-      activity_feed_title: "פעילות אחרונה"
-      add_photos: "הוסף תמונות"
-      add_videos: "שתף וידאו"
+      activity_feed_title: "פעילויות אחרונות"
+      add_photos: "הוספת תמונות"
+      add_videos: "שיתוף וידאו"
       adding_comment_message: "הוספת תגובה ..."
       all_activities: ענפי
       clear: ברור
-      create_error: "היתה בעיה להוסיף את פעילות המבוקש: %{error}"
-      delete: למחוק
+      create_error: "היתה בעיה להוסיף את הפעילות המבוקשת: %{error}"
+      delete: מחק
       invite_friends: "הזמן חברים"
-      item_could_not_be_removed: "לא יכול להיות פריט מרשימת הפעילויות האחרונות."
-      item_created: "פעילות נוסף"
-      item_removed: "פריט בהצלחה מרשימת הפעילויות האחרונות."
+      item_could_not_be_removed: "הפריט לא ניתן היה להסיר מהרשימה פעילויות האחרונות."
+      item_created: "נוסף לפעילות"
+      item_removed: "הפריט הוסר בהצלחה מרשימת הפעילויות האחרונות."
       joined_status: "%{name}} הצטרף %{application_name}"
-      make_comment: תגובה
+      make_comment: הערה
       paging_newer: "«חדש יותר"
       paging_older: "ישן יותר »"
-      permission_denied: "מצטערים, אינך יכול לעשות את זה."
-      post: לשתף
-      problem_with_status: "היתה בעיה לשנות את המצב שלך"
+      permission_denied: "סליחה, אתה לא יכול לעשות את זה."
+      post: שתף
+      problem_with_status: "היתה בעיה לשנות את הסטטוס שלך"
       status_indicator: הוא
       status_update_prompt: "מה אתה עושה עכשיו?"
-      template_or_item_required: "פעילות דורש תבנית או פריט כדי להציג כראוי"
-      update_error: "אופס ... היתה בעיה. %{errors}"
-      update_status_message: "עדכון מצב שלך!"
-      updating_status_message: "עדכון מצב שלך. אנא המתן."
-      upload_files: "לטעון קבצים"
+      template_or_item_required: "הפעילות דורשת תבנית או פריט כדי להציג כראוי"
+      update_error: "אופס ... הייתה בעיה. %{errors}"
+      update_status_message: "עדכון הסטטוס שלך!"
+      updating_status_message: "עדכון הסטטוס שלך. אנא המתן."
+      upload_files: "העלאת קבצים"
       write: לכתוב
-      write_prompt: "כתוב תגובה ..."
+      write_prompt: "לכתוב הערה ..."
     activity_templates: 
-      status_update: "עדכוני סטטוס"
+      status_update: "סטטוס עדכונים"

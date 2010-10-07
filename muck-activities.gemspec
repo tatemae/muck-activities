@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2010-10-04}
+  s.date = %q{2010-10-05}
   s.description = %q{Activity engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
      "app/views/activities/_activity_feed.html.erb",
      "app/views/activities/_activity_scripts.html.erb",
      "app/views/activities/_cached_activities.html.erb",
-     "app/views/activities/_comment.html.erb",
+     "app/views/activities/_comment.erb",
      "app/views/activities/_comments.html.erb",
      "app/views/activities/_contribute.html.erb",
      "app/views/activities/_current_status.html.erb",
@@ -96,6 +96,7 @@ Gem::Specification.new do |s|
      "lib/muck_activities/models/activity_item.rb",
      "lib/muck_activities/models/activity_source.rb",
      "lib/tasks/muck_activities.rake",
+     "muck-activities.gemspec",
      "public/images/loading.gif",
      "public/javascripts/muck_activities.js",
      "public/stylesheets/muck-activities.css",
@@ -110,8 +111,11 @@ Gem::Specification.new do |s|
      "test/rails_test/app/models/.keep",
      "test/rails_test/app/models/activity.rb",
      "test/rails_test/app/models/comment.rb",
+     "test/rails_test/app/models/country.rb",
+     "test/rails_test/app/models/language.rb",
      "test/rails_test/app/models/profile.rb",
      "test/rails_test/app/models/share.rb",
+     "test/rails_test/app/models/state.rb",
      "test/rails_test/app/models/user.rb",
      "test/rails_test/app/models/user_session.rb",
      "test/rails_test/app/views/default/index.html.erb",
@@ -761,8 +765,11 @@ Gem::Specification.new do |s|
      "test/rails_test/app/helpers/application_helper.rb",
      "test/rails_test/app/models/activity.rb",
      "test/rails_test/app/models/comment.rb",
+     "test/rails_test/app/models/country.rb",
+     "test/rails_test/app/models/language.rb",
      "test/rails_test/app/models/profile.rb",
      "test/rails_test/app/models/share.rb",
+     "test/rails_test/app/models/state.rb",
      "test/rails_test/app/models/user.rb",
      "test/rails_test/app/models/user_session.rb",
      "test/rails_test/config/application.rb",

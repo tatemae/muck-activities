@@ -2,33 +2,33 @@
 fi: 
   muck: 
     activities: 
-      activity_feed_title: "Recent Activity"
-      add_photos: "Lisää Photos"
-      add_videos: "Jaa videoita"
-      adding_comment_message: "Lisääminen kommentti ..."
+      activity_feed_title: "Viimeaikainen toiminta"
+      add_photos: "Lisää kuvia"
+      add_videos: "Jaa videot"
+      adding_comment_message: "Lisätään kommentti ..."
       all_activities: "Kaikki toiminnot"
       clear: Tyhjennä
       create_error: "Oli ongelma lisäämällä pyysi toimintaa: %{error}"
-      delete: Poistaa
-      invite_friends: "Kutsuu Friends"
-      item_could_not_be_removed: "Tuote ei voitu poistaa viime päävalikkoon."
-      item_created: "Lisätty toiminta"
-      item_removed: "Tuote onnistuneesti poistettu viime päävalikkoon."
+      delete: Poista
+      invite_friends: "Kutsu ystävät"
+      item_could_not_be_removed: "Tuote ei voitu poistaa viimeisimmistä toimista luettelo."
+      item_created: "Lisätty toimintaa"
+      item_removed: "Tuote onnistuneesti poistettiin viime päävalikkoon."
       joined_status: "%{name}} Liittyi %{application_name}"
-      make_comment: Kommentin
+      make_comment: Kommentoi
       paging_newer: «Uudemmat
-      paging_older: "Vanhemmista »"
-      permission_denied: "Anteeksi, et voi tehdä sitä."
-      post: Jakaa
-      problem_with_status: "Oli ongelma vaihdat aseman"
+      paging_older: "Vanhemmat »"
+      permission_denied: "Valitettavasti et voi tehdä sitä."
+      post: Jaa
+      problem_with_status: "Ongelma vaihdat tilan"
       status_indicator: "on"
       status_update_prompt: "Mitä teet juuri nyt?"
       template_or_item_required: "Toiminta edellyttää mallin tai tuote näyttää oikein"
       update_error: "Oho ... Oli ongelma. %{errors}"
       update_status_message: "Päivitä tila!"
-      updating_status_message: "Päivittäminen tila. Odota."
-      upload_files: "Tiedostojen lataaminen"
-      write: Kirjoittaa
+      updating_status_message: "Tilasi päivittäminen. Odota."
+      upload_files: "Lataa tiedostot"
+      write: Kirjoita
       write_prompt: "Kirjoita kommentti ..."
     activity_templates: 
-      status_update: Tilannetiedot
+      status_update: "Status Updates"

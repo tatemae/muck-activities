@@ -2,33 +2,33 @@
 hr: 
   muck: 
     activities: 
-      activity_feed_title: "Recent Activity"
-      add_photos: "Add Photos"
-      add_videos: "Share Video"
+      activity_feed_title: "Nedavna aktivnost"
+      add_photos: "Dodaj slikama"
+      add_videos: "Dionički Videos"
       adding_comment_message: "Dodavanje komentar ..."
       all_activities: "Sve aktivnosti"
       clear: Jasno
-      create_error: "Došlo je do problema dodajući traženu djelatnost: %{error}"
+      create_error: "Došlo je do problema prilikom dodavanja tražene djelatnosti: %{error}"
       delete: Izbrisati
-      invite_friends: "Pozovi prijatelje"
-      item_could_not_be_removed: "Predmeta ne može biti uklonjena iz nedavne aktivnosti liste."
-      item_created: "Added djelatnost"
-      item_removed: "Predmeta uspješno uklonjen iz nedavne aktivnosti liste."
+      invite_friends: "Pozovite prijatelje"
+      item_could_not_be_removed: "Predmeta ne može biti uklonjena iz nedavne aktivnosti popis."
+      item_created: "Dodano aktivnost"
+      item_removed: "Predmeta uspješno uklonjen iz nedavne aktivnosti popis."
       joined_status: "%{name}} Pridružio %{application_name}"
-      make_comment: Komentar
+      make_comment: Komentiraj
       paging_newer: «Novije
-      paging_older: "Older »"
-      permission_denied: "Nažalost, ne možete učiniti."
-      post: Dijeliti
+      paging_older: "Starije »"
+      permission_denied: "Nažalost, ne možete to učiniti."
+      post: Udio
       problem_with_status: "Došlo je do problema mijenja svoj status"
       status_indicator: je
-      status_update_prompt: "Što to radiš sada?"
-      template_or_item_required: "Djelatnost zahtijeva predložak ili stavke prikazati ispravno"
+      status_update_prompt: "Što radiš sada?"
+      template_or_item_required: "Aktivnost zahtijeva predložak ili stavke ispravno prikazati"
       update_error: "Ups ... Došlo je do problema. %{errors}"
       update_status_message: "ažurirati svoj status!"
       updating_status_message: "Ažuriranje svoj status. Molimo pričekajte."
-      upload_files: "Upload Files"
+      upload_files: "Učitati datoteke"
       write: Pisati
-      write_prompt: "Write a comment ..."
+      write_prompt: "Napišite komentar ..."
     activity_templates: 
       status_update: "Status Updates"

@@ -2,33 +2,33 @@
 sr: 
   muck: 
     activities: 
-      activity_feed_title: "Задња активност"
+      activity_feed_title: "Недавна активност"
       add_photos: "Додај фотографије"
-      add_videos: "Поделите Видео"
+      add_videos: "Подели Видео"
       adding_comment_message: "Додавање коментара ..."
-      all_activities: "Све активности"
-      clear: Избрисати
-      create_error: "Дошло је до проблема додавањем захтева активност: %{error}"
-      delete: Избрисати
+      all_activities: "Све Активности"
+      clear: Јасно
+      create_error: "Дошло је до проблема и додао тражене делатности: %{error}"
+      delete: Избриши
       invite_friends: "Позови пријатеље"
-      item_could_not_be_removed: "Ставка се не може бити уклоњен из листе недавних активности."
+      item_could_not_be_removed: "Артикал не може бити уклоњен из листе претходних активности."
       item_created: "Додато активност"
-      item_removed: "Ставка успешно уклоњен из листе недавних активности."
+      item_removed: "Ставка успешно уклоњен из листе претходних активности."
       joined_status: "%{name}} Придружио %{application_name}"
       make_comment: Коментар
       paging_newer: «Новије
       paging_older: "Старије »"
-      permission_denied: "Жао нам је, не могу да урадим."
-      post: Поделити
-      problem_with_status: "Дошло је до проблема мења ваш статус"
+      permission_denied: "Жао нам је, не могу то да урадим."
+      post: Поделите
+      problem_with_status: "Дошло је до проблема мења свој статус"
       status_indicator: је
-      status_update_prompt: "Шта радиш сада?"
-      template_or_item_required: "Активности захтева предложак или ставку за исправно приказивање"
+      status_update_prompt: "Шта радите сада?"
+      template_or_item_required: "Делатност захтева шаблон или ставке исправно приказује"
       update_error: "Упс ... Дошло је до проблема. %{errors}"
-      update_status_message: "Ажурирајте свој статус!"
-      updating_status_message: "Ажурирање вашег статуса. Молимо сачекајте."
-      upload_files: "Отпреми датотеке"
-      write: Писати
+      update_status_message: "ажурирате ваш статус!"
+      updating_status_message: "Ажурирање статуса. Молимо сачекајте."
+      upload_files: "Учитају датотеке"
+      write: Напишите
       write_prompt: "Напишите коментар ..."
     activity_templates: 
-      status_update: "Ажурирање статуса"
+      status_update: "Статус упдатес"

@@ -4,31 +4,31 @@ fa:
     activities: 
       activity_feed_title: "فعالیت های اخیر"
       add_photos: "اضافه کردن عکس"
-      add_videos: "قسمت فیلم"
+      add_videos: "به اشتراک گذاشتن فیلم ها"
       adding_comment_message: "اضافه کردن نظر..."
       all_activities: "تمام فعالیت های"
-      clear: "پاک کردن"
-      create_error: "بود مشکل اضافه کردن فعالیت های درخواست شده : %{error}وجود دارد."
+      clear: واضح
+      create_error: "بود مشکل اضافه کردن فعالیت های درخواست شده وجود دارد : %{error}"
       delete: حذف
       invite_friends: "دعوت از دوستان"
-      item_could_not_be_removed: "قلم دوم از اقلام لیست می توانند از فعالیت های اخیر نمی حذف خواهد شد."
-      item_created: "فعالیت های اضافه شده"
-      item_removed: "قلم دوم از اقلام لیست با موفقیت از فعالیت های اخیر ، حذف خواهند شد."
-      joined_status: "%{name}}تاریخ عضویت %{application_name}"
+      item_could_not_be_removed: "موردی می تواند از لیست فعالیت های اخیر نمی حذف خواهد شد."
+      item_created: "اضافه شده فعالیت"
+      item_removed: "موردی با موفقیت از لیست فعالیت های اخیر حذف خواهند شد."
+      joined_status: "%{name}} پیوست %{application_name}"
       make_comment: نظر
       paging_newer: «جدیدتر
       paging_older: "قدیمی تر »"
-      permission_denied: "با عرض پوزش ، شما را نمی تواند انجام دهد."
-      post: تقسیم
-      problem_with_status: "بود مشکل تغییر وضعیت خانوادگی شما وجود ندارد"
+      permission_denied: "با عرض پوزش ، شما می توانید که نمی کنند."
+      post: "به اشتراک گذاشتن"
+      problem_with_status: "بود مشکل تغییر وضعیت شما وجود دارد"
       status_indicator: است
-      status_update_prompt: "چه کسانی هستند به شما انجام در حال حاضر؟"
+      status_update_prompt: "چه کار می کنید در حال حاضر؟"
       template_or_item_required: "فعالیت نیاز به یک الگو یا یک آیتم را به درستی نمایش داده"
-      update_error: "آخ... بود مشکل وجود دارد. %{errors}"
-      update_status_message: "وضعیت بروز رسانی کنید!"
-      updating_status_message: "وضعیت به روز رسانی کنید. لطفا صبر کنید."
-      upload_files: "آپلود فایلها"
-      write: "نوشتن نظر"
-      write_prompt: "یک نظر..."
+      update_error: "آخ... بود یک مشکل وجود دارد. %{errors}"
+      update_status_message: "بروز رسانی وضعیت شما!"
+      updating_status_message: "وضعیت خود را به روز رسانی. لطفا صبر کنید."
+      upload_files: "آپلود فایل"
+      write: نوشتن
+      write_prompt: "نوشتن نظر..."
     activity_templates: 
-      status_update: "وضعیت به روز رسانی ها"
+      status_update: "وضعیت به روز رسانی"

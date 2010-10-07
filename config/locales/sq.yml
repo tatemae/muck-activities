@@ -2,33 +2,33 @@
 sq: 
   muck: 
     activities: 
-      activity_feed_title: "Recent Activity"
+      activity_feed_title: "Aktivitet e fundit"
       add_photos: "Add Photos"
       add_videos: "Share Video"
       adding_comment_message: "Shtimi i koment ..."
-      all_activities: "Gjitha Aktivitetet"
-      clear: "I qartë"
+      all_activities: "Të gjitha Aktivitetet"
+      clear: Qartë
       create_error: "Nuk ishte një problem duke shtuar aktivitetin e kërkuar: %{error}"
       delete: Fshij
-      invite_friends: "Invite Friends"
-      item_could_not_be_removed: "Item nuk mund të hiqen nga lista e fundit aktiviteteve."
-      item_created: "Aktiviteti Added"
-      item_removed: "Item hoq me sukses nga lista e fundit aktiviteteve."
-      joined_status: "%{name}} Bashkua %{application_name}"
+      invite_friends: "Fto Miq"
+      item_could_not_be_removed: "Item nuk mund të hiqet nga lista e fundit aktiviteteve."
+      item_created: "Shtuar aktivitetin"
+      item_removed: "Item hoq me sukses nga lista e aktiviteteve të kohëve të fundit."
+      joined_status: "%{name}} Bashkuar %{application_name}"
       make_comment: Koment
       paging_newer: «Newer
-      paging_older: "Older »"
-      permission_denied: "Na vjen keq, ju nuk mund ta bëjë këtë."
-      post: Pjesë
-      problem_with_status: "Nuk ishte një problem ndryshuar statusin tuaj"
+      paging_older: "Më e vjetër »"
+      permission_denied: "Na vjen keq, ju nuk mund ta bëni këtë."
+      post: Aksion
+      problem_with_status: "Nuk ishte një problem ndryshimin e statusit tuaj"
       status_indicator: është
       status_update_prompt: "Çfarë jeni duke bërë tani?"
-      template_or_item_required: "Një aktivitet kërkon një template ose një objekt për të shfaqur korrekt"
+      template_or_item_required: "Një aktivitet kërkon një template ose një objekt për të shfaqur saktë"
       update_error: "Oops ... Nuk ishte një problem. %{errors}"
-      update_status_message: "update statusin tuaj!"
+      update_status_message: "update status tuaj!"
       updating_status_message: "Përditësimi statusin tuaj. Ju lutem prisni."
       upload_files: "Upload Files"
       write: Shkruaj
-      write_prompt: "Shkruani një koment ..."
+      write_prompt: "Shkruaj një koment ..."
     activity_templates: 
-      status_update: "Statusi Updates"
+      status_update: "Updates Status"

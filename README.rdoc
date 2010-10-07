@@ -10,11 +10,11 @@ This should also install the dependencies.
 == Usage
 This engine implements simple activity tracking. 
 
-Models that can have activity feed should call 'include MuckActivities::Models::ActivityConsumer'
+Models that can have activity feed should call 'include MuckActivities::Models::MuckActivityConsumer'
 
   Example:
     class User
-      include MuckActivities::Models::ActivityConsumer
+      include MuckActivities::Models::MuckActivityConsumer
     end
 
 Adding an item to the activity feed requires 'MuckActivities::Models::ActivitySource' which then profiles the method 'add_activity'
@@ -30,10 +30,10 @@ Adding an item to the activity feed requires 'MuckActivities::Models::ActivitySo
   Example:
     add_activity(user.feed_to, user, comment, 'comment')
 
-Create an activity model that 'include MuckActivities::Models::Activity':
+Create an activity model that 'include MuckActivities::Models::MuckActivity':
 
   class Activity < ActiveRecord::Base
-    include MuckActivities::Models::Activity
+    include MuckActivities::Models::MuckActivity
   end
 
 === CSS
@@ -42,7 +42,7 @@ You can include that file in your layout or copy it and modify it to meet your n
 (Don't change the file as each time you run rake muck:activities:sync it will overwrite any changes you might have made.)
 
 === Authorization
-Adding 'include MuckActivities::Models::ActivityConsumer' to your model will add a simple 'can_view?' method:
+Adding 'include MuckActivities::Models::MuckActivityConsumer' to your model will add a simple 'can_view?' method:
 
   def can_view?(check_object)
     self == check_object

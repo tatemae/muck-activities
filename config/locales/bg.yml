@@ -2,33 +2,33 @@
 bg: 
   muck: 
     activities: 
-      activity_feed_title: "Recent Activity"
+      activity_feed_title: "Скорошна активност"
       add_photos: "Добавяне на снимки"
       add_videos: "Сподели Видео"
       adding_comment_message: "Добавяне на коментар ..."
       all_activities: "Всички дейности"
-      clear: Ясен
-      create_error: "Имаше проблем при добавянето на замолената дейност: %{error}"
-      delete: Изтривам
-      invite_friends: "Поканете приятели"
-      item_could_not_be_removed: "Позиция не може да бъде заличено от списъка на последните дейности."
-      item_created: "Added дейност"
-      item_removed: "Позиция успешно премахнат от списъка на последните дейности."
-      joined_status: "%{name}} Присъединиха %{application_name}"
+      clear: Ясно
+      create_error: "Имаше проблем при добавянето на поисканото действие: %{error}"
+      delete: Изтриване
+      invite_friends: "Покани приятели"
+      item_could_not_be_removed: "Позицията не може да бъде заличено от списъка последните дейности."
+      item_created: "Добавено дейност"
+      item_removed: "Позиция успешно отстранени от последния списък дейности."
+      joined_status: "%{name}} Присъедини %{application_name}"
       make_comment: Коментар
       paging_newer: «По-нови
       paging_older: "По-стари »"
-      permission_denied: "За съжаление, не можеш да направиш това."
+      permission_denied: "За съжаление не можеш да направиш това."
       post: Дял
-      problem_with_status: "Имаше проблем при промяната на статута"
+      problem_with_status: "Имаше проблем при смяна на статут"
       status_indicator: е
-      status_update_prompt: "Какво правиш сега?"
-      template_or_item_required: "Дейността изисква шаблон или елемент да показва правилно"
-      update_error: "Ами ... Имаше проблем. %{errors}"
-      update_status_message: "актуализиране състоянието си!"
-      updating_status_message: "Актуализиране на състоянието ви. Моля, изчакайте."
-      upload_files: "Upload Files"
-      write: Пиша
+      status_update_prompt: "Какво правиш в момента?"
+      template_or_item_required: "Една дейност изисква по шаблон или елемент, за да се показват правилно"
+      update_error: "Ами сега ... Имаше проблем. %{errors}"
+      update_status_message: "актуализира състоянието си!"
+      updating_status_message: "Актуализиране на вашето състояние. Моля, изчакайте."
+      upload_files: "Качване на файлове"
+      write: Добави
       write_prompt: "Напиши коментар ..."
     activity_templates: 
       status_update: "Статус актуализации"

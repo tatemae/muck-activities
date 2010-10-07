@@ -2,33 +2,33 @@
 tr: 
   muck: 
     activities: 
-      activity_feed_title: "Son Aktivite"
-      add_photos: "Fotoğraf ekle"
-      add_videos: "Share Videolar"
-      adding_comment_message: "Yorum ekleniyor ..."
-      all_activities: "Tüm Etkinlikler"
-      clear: Temizlemek
-      create_error: "Bir sorun istenen etkinliği ekleyerek: %{error} oldu"
+      activity_feed_title: "Son Faaliyet"
+      add_photos: "Eklemek Fotoğraflar"
+      add_videos: "Pay Videolar"
+      adding_comment_message: "Yorum eklemek ..."
+      all_activities: "Bütün Etkinlikler"
+      clear: Açık
+      create_error: "%{error}: İstenen faaliyet ekleyerek bir sorun oldu"
       delete: Silmek
-      invite_friends: "Davet Arkadaşlar"
-      item_could_not_be_removed: "Öğe son faaliyetleri listeden çıkarılır olamazdı."
-      item_created: "Ekledi etkinliği"
-      item_removed: "Öğe başarıyla son faaliyetleri listeden kaldırılır."
-      joined_status: "%{name}} %{application_name} Katıldı"
+      invite_friends: "Davet Gör"
+      item_could_not_be_removed: "Madde son faaliyetleri listeden kaldırılır olamazdı."
+      item_created: "faaliyet eklendi"
+      item_removed: "Öğe başarılı son faaliyetleri listeden kaldırılır."
+      joined_status: "%{name}} Katıldı %{application_name}"
       make_comment: Yorum
-      paging_newer: «Newer
-      paging_older: "Eski »"
-      permission_denied: "Maalesef, bunu yapamazlar."
-      post: Paylaşmak
-      problem_with_status: "Bir sorun durum değişiyordu"
-      status_indicator: olmak
-      status_update_prompt: "Şu anda ne yapıyorsun?"
-      template_or_item_required: "Bir faaliyet veya bir madde düzgün görüntülemek için şablon gerektirir"
-      update_error: "Oops ... Orada bir sorun var. %{errors}"
-      update_status_message: "Durum güncelleme!"
-      updating_status_message: "Durum güncelleniyor. Lütfen bekleyin."
-      upload_files: "Upload Dosya"
+      paging_newer: "«Daha yeni"
+      paging_older: "Büyük »"
+      permission_denied: "Üzgünüm, bunu yapamam."
+      post: Pay
+      problem_with_status: "Durumunuzu değişen bir sorun oluştu"
+      status_indicator: olduğunu
+      status_update_prompt: "Şu an ne yapıyorsun?"
+      template_or_item_required: "Bir faaliyet bir şablon veya bir öğeyi doğru görüntülemek için gerektirir"
+      update_error: "Hata ... bir sorun vardı. %{errors}"
+      update_status_message: "durumunuzu güncelleyin!"
+      updating_status_message: "Durumunuzu güncelleniyor. Lütfen bekleyin."
+      upload_files: "Upload Dosyalar"
       write: Yazmak
-      write_prompt: "Yorum yazın ..."
+      write_prompt: "Yorum Yaz ..."
     activity_templates: 
-      status_update: "Durum Güncellemeleri"
+      status_update: "Durumu Güncellemeler"

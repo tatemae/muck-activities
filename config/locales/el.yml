@@ -3,32 +3,32 @@ el:
   muck: 
     activities: 
       activity_feed_title: "Πρόσφατη δραστηριότητα"
-      add_photos: "Προσθήκη Photos"
-      add_videos: "Μερίδιο Βίντεο"
-      adding_comment_message: "Προσθήκη σχόλιο ..."
-      all_activities: "Όλες οι δραστηριότητες"
-      clear: Καθαρός
-      create_error: "Υπήρξε ένα πρόβλημα με προσθήκη του ζήτησε δραστηριότητα: %{error}"
-      delete: Διαγράφω
-      invite_friends: "Προσκαλέστε τους φίλους"
-      item_could_not_be_removed: "Το σημείο δεν μπορούσε να αφαιρεθεί από την πρόσφατη τον κατάλογο των δραστηριοτήτων."
+      add_photos: "Προσθέστε Φωτογραφίες"
+      add_videos: "Μοιραστείτε βίντεο"
+      adding_comment_message: "Προσθήκη σχολίου ..."
+      all_activities: "Όλες οι Δραστηριότητες"
+      clear: Σαφή
+      create_error: "Υπήρξε ένα πρόβλημα κατά την προσθήκη του ζήτησε δραστηριότητα: %{error}"
+      delete: Διαγραφή
+      invite_friends: "Προσκαλέστε φίλους"
+      item_could_not_be_removed: "Το σημείο δεν θα μπορούσε να διαγραφεί από τη λίστα πρόσφατων δραστηριοτήτων."
       item_created: "Προστέθηκε δραστηριότητα"
-      item_removed: "Θέση επιτυχώς αφαιρεθεί από την πρόσφατη κατάλογο των δραστηριοτήτων."
-      joined_status: "%{name}} Προσχώρησαν %{application_name}"
-      make_comment: Σχόλιο
+      item_removed: "Θέση επιτυχώς διαγραφεί από τη λίστα πρόσφατων δραστηριοτήτων."
+      joined_status: "%{name}} Εντάχθηκε %{application_name}"
+      make_comment: Σχολιάστε
       paging_newer: «Νεότερο
       paging_older: "Παλαιότερο »"
-      permission_denied: "Λυπούμαστε, δεν μπορείτε να το κάνετε αυτό."
-      post: Μοιράζομαι
-      problem_with_status: "Υπήρξε ένα πρόβλημα αλλάζοντας την κατάστασή σας"
+      permission_denied: "Λυπούμαστε, αλλά δεν μπορείτε να το κάνετε αυτό."
+      post: Share
+      problem_with_status: "Υπήρξε ένα πρόβλημα κατά την αλλαγή της κατάστασής σας"
       status_indicator: είναι
       status_update_prompt: "Τι κάνεις τώρα;"
-      template_or_item_required: "Μια δραστηριότητα απαιτεί ένα πρότυπο ή ένα στοιχείο για να εμφανιστεί σωστά"
+      template_or_item_required: "Μια δραστηριότητα απαιτεί ένα πρότυπο ή ένα αντικείμενο για να εμφανιστεί σωστά"
       update_error: "Ωχ ... Υπήρξε ένα πρόβλημα. %{errors}"
-      update_status_message: "ενημερώσετε την κατάστασή σας!"
-      updating_status_message: "Ενημέρωση κατάστασή σας. Παρακαλώ περιμένετε."
-      upload_files: "Upload Files"
-      write: Γράφω
+      update_status_message: "ενημέρωση της κατάστασής σας!"
+      updating_status_message: "Ενημέρωση της κατάστασής σας. Παρακαλώ περιμένετε."
+      upload_files: "Αποστολή αρχείων"
+      write: Γράψτε
       write_prompt: "Γράψτε ένα σχόλιο ..."
     activity_templates: 
-      status_update: "Κατάσταση Updates"
+      status_update: "Ανανεώσεις Κατάσταση"

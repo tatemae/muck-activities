@@ -2,33 +2,33 @@
 pl: 
   muck: 
     activities: 
-      activity_feed_title: "Recent Activity"
+      activity_feed_title: "Ostatnia aktywność"
       add_photos: "Dodaj zdjęcia"
-      add_videos: "Poleć wideo"
+      add_videos: "Udostępnianie plików wideo"
       adding_comment_message: "Dodawanie komentarza ..."
       all_activities: "Wszystkie działania"
-      clear: Jasny
-      create_error: "Nie było problemu, dodając wymagane działalności: %{error}"
-      delete: Usunąć
-      invite_friends: "Zaproś przyjaciół"
-      item_could_not_be_removed: "Produkt nie może być usunięty z listy ostatnich działań."
+      clear: Wyczyść
+      create_error: "Wystąpił problem z dodaniem wniosek działalności: %{error}"
+      delete: Usuń
+      invite_friends: "Zaproś znajomych"
+      item_could_not_be_removed: "Pozycja nie mogą być usunięte z listy ostatnich działań."
       item_created: "Dodano działalności"
-      item_removed: "Produkt pomyślnie usunięty z listy ostatnich działań."
+      item_removed: "Pozycja pomyślnie usunięty z listy ostatnich działań."
       joined_status: "%{name}} Dołączył %{application_name}"
       make_comment: Komentarz
       paging_newer: «Nowsze
       paging_older: "Starsze »"
       permission_denied: "Niestety, nie mogę tego zrobić."
-      post: Dzielić
-      problem_with_status: "Nie było problemu zmienia swój status"
+      post: Poleć
+      problem_with_status: "Wystąpił problem zmieniając status"
       status_indicator: jest
       status_update_prompt: "Co robisz teraz?"
-      template_or_item_required: "Działalności wymaga szablonu lub element, aby wyświetlić prawidłowo"
+      template_or_item_required: "Działalności wymaga szablonu lub element, aby wyświetlić poprawnie"
       update_error: "Ups ... Nie było problemu. %{errors}"
       update_status_message: "zaktualizować swój status!"
-      updating_status_message: "Aktualizacja swój status. Proszę czekać."
+      updating_status_message: "Aktualizacja statusu. Proszę czekać."
       upload_files: "Prześlij pliki"
-      write: Pisać
+      write: Napisz
       write_prompt: "Napisz komentarz ..."
     activity_templates: 
-      status_update: "Status Aktualizacje"
+      status_update: "Zmiany statusu"

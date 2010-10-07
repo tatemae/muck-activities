@@ -2,33 +2,33 @@
 mt: 
   muck: 
     activities: 
-      activity_feed_title: "Recent Attività"
-      add_photos: "Add Photos"
-      add_videos: "Share Videos"
-      adding_comment_message: "Żieda comment ..."
-      all_activities: "Attivitajiet Kollha"
+      activity_feed_title: "Riċenti Attività"
+      add_photos: "Żid Ritratti"
+      add_videos: "Videos Share"
+      adding_comment_message: "Żieda kumment ..."
+      all_activities: "Kollha Attivitajiet"
       clear: Ċar
       create_error: "Kien hemm problema żżid l-attività mitluba: %{error}"
       delete: Ħassar
-      invite_friends: "Invite Friends"
-      item_could_not_be_removed: "Oġġett ma jista &#39;jitneħħa mill-lista ta&#39; attivitajiet reċenti."
-      item_created: "Attività Added"
-      item_removed: "Punt b&#39;suċċess jitneħħa mil-lista attivitajiet reċenti."
+      invite_friends: "Tistieden lill-ħbieb"
+      item_could_not_be_removed: "Punt ma jista &#39;jitneħħa mill-lista attivitajiet riċenti."
+      item_created: "Miżjud l-attività"
+      item_removed: "Punt b&#39;suċċess jitneħħa mil-lista attivitajiet riċenti."
       joined_status: "%{name}} Ssieħbu %{application_name}"
       make_comment: Kumment
-      paging_newer: «Newer
+      paging_newer: «Godda
       paging_older: "Older »"
       permission_denied: "Jiddispjacini, inti ma tistax tagħmel dan."
-      post: Aqsam
-      problem_with_status: "Kien hemm problema tibdel l-istat tiegħek"
+      post: Share
+      problem_with_status: "Kien hemm problema tibdil fl-istatus tiegħek"
       status_indicator: huwa
-      status_update_prompt: "X&#39;Ser tagħmel id-dritt issa?"
+      status_update_prompt: "X&#39;Ser tagħmel dritt issa?"
       template_or_item_required: "L-attivita teħtieġ mudell jew oġġett li jintwerew b&#39;mod korrett"
       update_error: "Oops ... Kien hemm problema. %{errors}"
-      update_status_message: "taġġorna l-istat tiegħek!"
+      update_status_message: "taġġorna l-istatus tiegħek!"
       updating_status_message: "Aġġornament istatus tiegħek. Jekk jogħġbok stenna."
-      upload_files: "Upload Files"
+      upload_files: "Tella Fajls"
       write: Ikteb
       write_prompt: "Write a comment ..."
     activity_templates: 
-      status_update: "Aġġornamenti Status"
+      status_update: "Status Aġġornamenti"

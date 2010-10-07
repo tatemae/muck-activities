@@ -5,7 +5,7 @@ class ActivityFeedTest < ActiveSupport::TestCase
     before do
       @activity_feed = Factory(:activity_feed)
     end
-    subject { @activity_feed }
+    
     it { should belong_to :activity }
     it { should belong_to :ownable }
   end

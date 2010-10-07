@@ -1,13 +1,14 @@
+# include MuckActivities::Models::MuckActivitySource
 module MuckActivities
   module Models
     
     # +ActivitySource+ gives the class it is called on a method called
     # +add_activity+ that can add activities into a feed.
     # This can be applied to models or controllers
-    module ActivitySource
+    module MuckActivitySource
     
       # +add_activity+ adds an activity to all activites feeds that belong to the objects found in feed_to.
-      # * +feed_to+: an array of objects that have +include MuckActivities::Models::ActivityConsumer+ declared on them.  The generated activity
+      # * +feed_to+: an array of objects that have +include MuckActivities::Models::MuckActivityConsumer+ declared on them.  The generated activity
       #   will be pushed into the feed of each of these objects.
       # * +source+: the object that peformed the activity ie a user or group
       # * +item+: an object that will be used to generated the entry in an activity feed
@@ -44,7 +45,7 @@ module MuckActivities
       # +status+ returns the first activity item from the user's activity feed that is a status update.
       # Used for displaying the last status update the user made
       def status
-        self.activities.status_updates.newest.first
+        self.activities.status_updates.by_newest.first
       end
     
       def can_view?(check_object)

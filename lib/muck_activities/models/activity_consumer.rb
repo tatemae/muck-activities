@@ -1,16 +1,17 @@
+# include MuckActivities::Models::MuckActivityConsumer
 module MuckActivities
   module Models
     #
-    # +include MuckActivities::Models::ActivityConsumer+ gives the class it is called on an activity feed and a method called
+    # +include MuckActivities::Models::MuckActivityConsumer+ gives the class it is called on an activity feed and a method called
     # +add_activity+ that can add activities into a feed.  Retrieve activity feed items
     # via object.activities. ie @user.activities.
-    module ActivityConsumer
+    module MuckActivityConsumer
       extend ActiveSupport::Concern
     
       included do        
         has_many :activity_feeds, :as => :ownable
         has_many :activities, :through => :activity_feeds, :order => 'created_at desc'
-        include MuckActivities::Models::ActivitySource
+        include MuckActivities::Models::MuckActivitySource
       end
     
     end

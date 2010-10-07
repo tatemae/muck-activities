@@ -2,33 +2,33 @@
 it: 
   muck: 
     activities: 
-      activity_feed_title: "Attività recenti"
+      activity_feed_title: "Attività recente"
       add_photos: "Aggiungi Foto"
       add_videos: "Condividi Video"
-      adding_comment_message: "L&#39;aggiunta di commento ..."
+      adding_comment_message: "Aggiunta di commento ..."
       all_activities: "Tutte le attività"
-      clear: Chiaro
+      clear: Cancella
       create_error: "C&#39;è stato un problema aggiungendo le attività richieste: %{error}"
-      delete: Eliminare
-      invite_friends: "Invita Amici"
-      item_could_not_be_removed: "Articolo non poteva essere rimosso dalla recente attività di lista."
-      item_created: "Ha aggiunto l&#39;attività"
-      item_removed: "Articolo rimosso con successo dalla recente attività di lista."
-      joined_status: "%{name}} Iscritto %{application_name}"
-      make_comment: Commento
-      paging_newer: «Newer
-      paging_older: "Older »"
-      permission_denied: "Ci dispiace, non puoi farlo."
-      post: Condividere
-      problem_with_status: "C&#39;è stato un problema di cambiare status"
+      delete: Elimina
+      invite_friends: "Invita gli amici"
+      item_could_not_be_removed: "Luogo in cui non poteva essere rimosso dalla lista recenti attività."
+      item_created: "Aggiunto attività"
+      item_removed: "Luogo in cui con successo rimosso dalla lista recenti attività."
+      joined_status: "%{name}} Aderito %{application_name}"
+      make_comment: Commenta
+      paging_newer: "«Più recenti"
+      paging_older: "Meno recenti »"
+      permission_denied: "Spiacente, non puoi farlo."
+      post: Condividi
+      problem_with_status: "C&#39;è stato un problema cambiare il vostro status"
       status_indicator: è
-      status_update_prompt: "Che cosa stai facendo adesso?"
-      template_or_item_required: "Un &#39;attività richiede un modello o un elemento per visualizzare correttamente"
+      status_update_prompt: "Cosa stai facendo in questo momento?"
+      template_or_item_required: "Una attività richiede un modello o un elemento per visualizzare correttamente"
       update_error: "Oops ... C&#39;è stato un problema. %{errors}"
-      update_status_message: "aggiornare il tuo status!"
-      updating_status_message: "Aggiornare il proprio status. Attendere prego."
-      upload_files: "Caricare file"
-      write: Scrivere
+      update_status_message: "aggiornare il proprio stato!"
+      updating_status_message: "Aggiornare il proprio status. Si prega di attendere."
+      upload_files: "Carica file"
+      write: Scrivi
       write_prompt: "Scrivi un commento ..."
     activity_templates: 
-      status_update: "Status Updates"
+      status_update: "Aggiornamenti di stato"
