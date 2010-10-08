@@ -1,6 +1,6 @@
 <div id="status-update">
   <%= output_errors(t('muck.users.problem_with_status'), {:class => 'help-box'}, @activity) %>
-  <% form_for(:activity, 
+  <%= form_for(:activity, 
               :url => activities_path(:parent_id => activities_object, :parent_type => activities_object.class), 
               :html => { :id => 'status_update_form', :class => 'clear ajax',
                          :action => activities_path(:parent_id => activities_object, :parent_type => activities_object.class) } ) do |f| -%>

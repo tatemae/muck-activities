@@ -1,9 +1,9 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-class Muck::ActivitiesControllerTest < ActionController::TestCase
+describe Muck::ActivitiesController do
 
-  tests Muck::ActivitiesController
-
+  render_views
+  
   describe "activities controller - anonymous" do
     describe "on GET to index" do
       before do
@@ -97,8 +97,8 @@ class Muck::ActivitiesControllerTest < ActionController::TestCase
         @activity = Factory(:activity, :source => @user)
         delete :destroy, :id => @activity.id
       end
-      should_respond_with :redirect
-      should_set_the_flash_to(I18n.t("muck.activities.item_removed"))
+      it { should respond_with :redirect }
+      it { should set_the_flash.to(I18n.t("muck.activities.item_removed")) }
     end
   
     describe "on DELETE to destroy (js)" do

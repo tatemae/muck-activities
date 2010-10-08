@@ -6,9 +6,6 @@ module MuckActivities
       extend ActiveSupport::Concern
       
       included do
-        
-        include ::MuckComments::Models::MuckCommentable
-        
         belongs_to :item, :polymorphic => true
         belongs_to :source, :polymorphic => true
         belongs_to :attachable, :polymorphic => true
@@ -31,10 +28,12 @@ module MuckActivities
         attr_protected :created_at, :updated_at
         
         validate :check_template
+        
+        include ::MuckComments::Models::MuckCommentable
       end
 
       def check_template
-        errors.add_to_base(I18n.t('muck.activities.template_or_item_required')) if template.blank? && item.blank?
+        errors.add(:base, I18n.t('muck.activities.template_or_item_required')) if template.blank? && item.blank?
       end
 
       # Provides a template that can be used to render a view of this activity.

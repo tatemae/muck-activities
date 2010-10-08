@@ -5,7 +5,7 @@ module MuckActivityHelper
   end
   
   def activity_comment_link(activity, comment = nil)
-    if GlobalConfig.enable_activity_comments
+    if MuckActivities.configuration.enable_activity_comments
       comment_form(activity, comment)
     end
   end
@@ -37,7 +37,7 @@ module MuckActivityHelper
   # limited: a value passed to each activity template which can result in a smaller amount of data 
   #          being rendered
   def limited_activity_feed_for(activities_object, limited = false)
-    activities = activities_object.activities.by_latest.created_by(activities_object).only_public.find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
+    activities = activities_object.activities.by_latest.created_by(activities_object).is_public.find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
     render :partial => 'activities/activity_feed', :locals => { :activities_object => activities_object, :activities => activities, :limited => limited }
   end
   
@@ -77,17 +77,18 @@ module MuckActivityHelper
   # Renders a delete button for a comment inside an activity feed
   def delete_activity_comment(comment, button_type = :button, button_text = t("muck.activities.delete"))
     render :partial => 'shared/delete', :locals => { :delete_object => comment, 
-                                                         :button_type => button_type,
-                                                         :button_text => button_text, 
-                                                         :form_class => 'comment-delete',
-                                                         :delete_path => comment_path(comment, :format => 'js') }
+                                                     :button_type => button_type,
+                                                     :button_text => button_text, 
+                                                     :form_class => 'comment-delete',
+                                                     :delete_path => comment_path(comment, :format => 'js') }
   end
   
   # Renders an activity feed filter.  Filter items come from the name of the templates used to render the activities.
   # Pass in an array of templates to leave out as the second parameter
   def activity_filter(activities_object, *dont_include)
     dont_include = [dont_include] unless dont_include.is_a?(Array)
-    activity_types = activities_object.activities.all(:select => "DISTINCT activities.template")
+    activity_types = Activity.where(:id => activities_object.id).select("DISTINCT(template)")
+    #activity_types = activities_object.activities.select("DISTINCT(activities.template)")
     filter_types = activity_types.find_all {|activity| !dont_include.include?(activity.template)}
     render :partial => 'activities/template_filter', :locals => { :activity_types => filter_types, :dont_include => dont_include }
   end
@@ -110,9 +111,9 @@ module MuckActivityHelper
   
   def get_profile_activities(activities_object)
     if !params[:latest_activity_id].blank?
-      activities_object.activities.by_latest.filter_by_template(params[:activity_filter]).after(params[:latest_activity_id]).only_public.created_by(activities_object).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
+      activities_object.activities.by_latest.filter_by_template(params[:activity_filter]).after(params[:latest_activity_id]).is_public.created_by(activities_object).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
     else
-      activities_object.activities.by_latest.filter_by_template(params[:activity_filter]).only_public.created_by(activities_object).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
+      activities_object.activities.by_latest.filter_by_template(params[:activity_filter]).is_public.created_by(activities_object).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
     end
   end
   

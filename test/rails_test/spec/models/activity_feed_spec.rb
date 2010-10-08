@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-class ActivityFeedTest < ActiveSupport::TestCase
+describe ActivityFeed do
   describe "ActivityFeed" do
     before do
       @activity_feed = Factory(:activity_feed)

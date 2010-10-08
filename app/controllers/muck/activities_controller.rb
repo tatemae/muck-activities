@@ -100,21 +100,15 @@ class Muck::ActivitiesController < ApplicationController
   protected
   
   def get_activities_html(activities, limited = false)
-    render_as_html do
-      render_to_string(:partial => "activities/cached_activities", :locals => {:activities => @activities, :limited => limited})
-    end
+    render_to_string(:partial => "activities/cached_activities", :locals => {:activities => @activities, :limited => limited})
   end
   
   def get_status_html(activity)
-    render_as_html do
-      render_to_string(:partial => 'activities/current_status', :locals => {:activities_object => activity})
-    end
+    render_to_string(:partial => 'activities/current_status', :locals => {:activities_object => activity})
   end
   
   def get_activity_html(activity)
-    render_as_html do
-      render_to_string(:partial => "activity_templates/#{activity.template}", :locals => { :activity => activity })
-    end
+    render_to_string(:partial => "activity_templates/#{activity.template}", :locals => { :activity => activity })
   end
   
   def find_parent

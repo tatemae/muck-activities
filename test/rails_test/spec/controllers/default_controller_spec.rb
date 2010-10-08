@@ -1,9 +1,9 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-class DefaultControllerTest < ActionController::TestCase
-
-  tests DefaultController
-
+describe DefaultController do
+  
+  render_views
+  
   describe "default controller" do
     before do
       activate_authlogic

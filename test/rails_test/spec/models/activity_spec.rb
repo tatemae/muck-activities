@@ -77,7 +77,7 @@ describe Activity do
   it "should get the partial from the template" do
     template = 'status_update'
     activity = Factory(:activity, :template => template, :item => nil)
-    activity.partial.should == template, "The activity partial was not set to the specified template"
+    activity.partial.should == template
   end
 
   it "should get the partial from the item" do
