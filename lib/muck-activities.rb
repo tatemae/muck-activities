@@ -1,0 +1,7 @@
+require 'cgi'
+require 'muck-activities/config'
+require 'muck-activities/models/activity'
+require 'muck-activities/models/activity_consumer'
+require 'muck-activities/models/activity_item'
+require 'muck-activities/models/activity_source'
+require 'muck-activities/engine'

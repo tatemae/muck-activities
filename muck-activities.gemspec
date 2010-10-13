@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2010-10-08}
+  s.date = %q{2010-10-13}
   s.description = %q{Activity engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -88,13 +88,6 @@ Gem::Specification.new do |s|
      "db/migrate/20090730044139_add_comment_cache.rb",
      "db/migrate/20090818204527_add_activity_indexes.rb",
      "db/migrate/20090819030523_add_attachable_to_activities.rb",
-     "lib/muck_activities.rb",
-     "lib/muck_activities/config.rb",
-     "lib/muck_activities/engine.rb",
-     "lib/muck_activities/models/activity.rb",
-     "lib/muck_activities/models/activity_consumer.rb",
-     "lib/muck_activities/models/activity_item.rb",
-     "lib/muck_activities/models/activity_source.rb",
      "lib/tasks/muck_activities.rake",
      "muck-activities.gemspec",
      "public/images/loading.gif",

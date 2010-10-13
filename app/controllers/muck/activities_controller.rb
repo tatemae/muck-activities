@@ -1,5 +1,4 @@
 class Muck::ActivitiesController < ApplicationController
-  unloadable
   
   include ApplicationHelper
   include MuckActivityHelper

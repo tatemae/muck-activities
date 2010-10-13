@@ -17,7 +17,7 @@ Models that can have activity feed should call 'include MuckActivities::Models::
       include MuckActivities::Models::MuckActivityConsumer
     end
 
-Adding an item to the activity feed with 'include MuckActivities::Models::ActivitySource' which then profiles the method 'add_activity'
+Adding an item to the activity feed with 'include MuckActivities::Models::MuckActivitySource' which then profiles the method 'add_activity'
 
   add_activity(feed_to, actor, item, template, check_method)
 
