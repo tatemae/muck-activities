@@ -1,7 +1,7 @@
 = MuckActivities
 
 == Installation
-The muck activities engine is part of the muck framework and relies upon the muck_engine.  Install with
+The muck activities engine is part of the muck framework and relies upon the muck-engine.  Install with
 
   sudo gem install muck-activites
   

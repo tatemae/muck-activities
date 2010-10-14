@@ -9,13 +9,13 @@ gem 'authlogic', :git => 'git://github.com/odorcicd/authlogic.git', :branch => '
 
 gem "bcrypt-ruby", :require => "bcrypt"
 
-gem 'muck-engine', :require => 'muck_engine', :path => "~/projects/muck-engine"
-gem 'muck-users', :require => 'muck_users', :path => "~/projects/muck-users"
-gem 'muck-profiles', :require => 'muck_profiles', :path => "~/projects/muck-profiles"
+gem 'muck-engine', :path => "~/projects/muck-engine"
+gem 'muck-users', :path => "~/projects/muck-users"
+gem 'muck-profiles', :path => "~/projects/muck-profiles"
 gem 'muck-activities', :path => '../../'
-gem 'muck-shares', :require => 'muck_shares', :path => "~/projects/muck-shares"
-gem 'muck-comments', :require => 'muck_comments', :path => "~/projects/muck-comments"
-gem 'muck-friends', :require => 'muck_friends', :path => "~/projects/muck-friends"
+gem 'muck-shares', :path => "~/projects/muck-shares"
+gem 'muck-comments', :path => "~/projects/muck-comments"
+gem 'muck-friends', :path => "~/projects/muck-friends"
   
 if RUBY_VERSION < '1.9'
   gem "ruby-debug"

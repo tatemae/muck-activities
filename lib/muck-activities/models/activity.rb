@@ -1,5 +1,5 @@
 # include MuckActivities::Models::MuckActivity
-require 'muck_comments'
+require 'muck-comments'
 module MuckActivities
   module Models
     module MuckActivity
