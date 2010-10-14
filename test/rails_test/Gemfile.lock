@@ -24,6 +24,21 @@ PATH
       sanitize
 
 PATH
+  remote: /Users/jbasdf/projects/muck-contents
+  specs:
+    muck-contents (3.0.0)
+      acts-as-taggable-on
+      awesome_nested_set
+      babelphish
+      friendly_id
+      muck-comments
+      muck-engine
+      muck-users
+      sanitize
+      tiny_mce
+      uploader
+
+PATH
   remote: /Users/jbasdf/projects/muck-engine
   specs:
     muck-engine (3.0.1)
@@ -171,17 +186,6 @@ GEM
       mime-types
       treetop (>= 1.4.5)
     mime-types (1.16)
-    muck-contents (3.0.0)
-      acts-as-taggable-on
-      awesome_nested_set
-      babelphish
-      friendly_id
-      muck-comments
-      muck-engine
-      muck-users
-      sanitize
-      tiny_mce
-      uploader
     muck-raker (0.3.18)
     muck-solr (0.4.7)
     mysql (2.8.1)
@@ -272,6 +276,7 @@ DEPENDENCIES
   launchy
   muck-activities!
   muck-comments!
+  muck-contents!
   muck-engine!
   muck-friends!
   muck-profiles!
