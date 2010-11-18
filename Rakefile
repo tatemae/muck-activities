@@ -6,16 +6,16 @@ require 'rspec/core/rake_task'
 desc 'Default: run specs.'
 task :default => :spec
 RSpec::Core::RakeTask.new(:spec) do |t|
-  t.rspec_opts = ["--color", "-c", "-f progress", "-r test/rails_test/spec/spec_helper.rb"]
-  t.pattern = 'test/rails_test/spec/**/*_spec.rb'  
+  t.rspec_opts = ["--color", "-c", "-f progress", "-r test/spec/spec_helper.rb"]
+  t.pattern = 'test/spec/**/*_spec.rb'  
 end
 
 begin
   require 'rcov/rcovtask'
   Rcov::RcovTask.new do |t|
     #t.libs << 'lib'
-    t.libs << 'test/rails_test/lib'
-    t.pattern = 'test/rails_test/test/**/*_test.rb'
+    t.libs << 'test/lib'
+    t.pattern = 'test/test/**/*_spec.rb'
     t.verbose = true
     t.output_dir = 'coverage'
     t.rcov_opts << '--exclude "gems/*"'
@@ -54,6 +54,7 @@ begin
     gemspec.add_dependency "muck-engine"
     gemspec.add_dependency "muck-users"
     gemspec.add_dependency "muck-comments"
+    gemspec.test_files.exclude 'test/**' # exclude test directory
   end
   Jeweler::GemcutterTasks.new
   Jeweler::RubyforgeTasks.new do |rubyforge|
