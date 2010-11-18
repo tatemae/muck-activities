@@ -24,7 +24,7 @@ uk:
       status_indicator: є
       status_update_prompt: "Що ти робиш прямо зараз?"
       template_or_item_required: "Діяльність вимагає шаблон або пункт для правильного відображення"
-      update_error: "На жаль ... Існував проблеми. %{errors}"
+      update_error: "Упс ... Існував проблеми. %{errors}"
       update_status_message: "оновлювати свій статус!"
       updating_status_message: "Оновлення статусу. Будь ласка, почекайте."
       upload_files: "Завантажити файли"

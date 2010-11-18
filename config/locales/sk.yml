@@ -26,7 +26,7 @@ sk:
       template_or_item_required: "Činnosť vyžaduje šablóny alebo položky zobrazené správne"
       update_error: "Oops ... Tam bol problém. %{errors}"
       update_status_message: "aktualizovať svoj stav!"
-      updating_status_message: "Aktualizácia stavu. Čakajte prosím."
+      updating_status_message: "Aktualizácia stavu. Počkajte prosím."
       upload_files: "Upload súborov"
       write: Písať
       write_prompt: "Napísať komentár ..."

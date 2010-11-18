@@ -20,7 +20,7 @@ nl:
       paging_older: "Ouder »"
       permission_denied: "Sorry, je kan dat niet."
       post: Aandeel
-      problem_with_status: "Er was een probleem het veranderen van je status"
+      problem_with_status: "Er was een probleem het wijzigen van uw status"
       status_indicator: is
       status_update_prompt: "Wat doe je nu?"
       template_or_item_required: "Een activiteit vereist een sjabloon of een item correct weer te geven"

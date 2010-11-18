@@ -43,18 +43,18 @@ end
 
 begin
   require 'jeweler'
-  Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "muck-activities"
-    gemspec.summary = "Activity engine for the muck system"
-    gemspec.email = "justin@tatemae.com"
-    gemspec.homepage = "http://github.com/tatemae/muck-activities"
-    gemspec.description = "Activity engine for the muck system."
-    gemspec.authors = ["Justin Ball", "Joel Duffin"]
-    gemspec.rubyforge_project = 'muck-activities'
-    gemspec.add_dependency "muck-engine"
-    gemspec.add_dependency "muck-users"
-    gemspec.add_dependency "muck-comments"
-    gemspec.test_files.exclude 'test/**' # exclude test directory
+  Jeweler::Tasks.new do |gem|
+    gem.name = "muck-activities"
+    gem.summary = "Activity engine for the muck system"
+    gem.email = "justin@tatemae.com"
+    gem.homepage = "http://github.com/tatemae/muck-activities"
+    gem.description = "Activity engine for the muck system."
+    gem.authors = ["Justin Ball", "Joel Duffin"]
+    gem.add_dependency "muck-engine"
+    gem.add_dependency "muck-users"
+    gem.add_dependency "muck-comments"
+    gem.files.exclude 'test/**'
+    gem.test_files.exclude 'test/**' # exclude test directory
   end
   Jeweler::GemcutterTasks.new
   Jeweler::RubyforgeTasks.new do |rubyforge|
