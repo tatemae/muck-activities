@@ -11,7 +11,7 @@ en:
       updating_status_message: "Updating your status.  Please wait."
       status_indicator: is
       invite_friends: Invite Friends
-      joined_status: "%{name}} joined %{application_name}"
+      joined_status: "%{name} joined %{application_name}"
       post: Share
       clear: Clear
       delete: Delete
