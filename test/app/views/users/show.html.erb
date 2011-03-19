@@ -18,6 +18,7 @@
 </div>
 
 <% content_for :javascript do -%>
+<script type="text/javascript" language="JavaScript">
 jQuery(document).ready(function() {
   jQuery('a.lightbox').fancybox({
       'hideOnContentClick': true,
@@ -33,4 +34,5 @@ jQuery(document).ready(function() {
     jQuery('#' + container).show();
   });
 });
+</script>
 <% end -%>

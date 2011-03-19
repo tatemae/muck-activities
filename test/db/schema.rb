@@ -10,13 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100206000906) do
+ActiveRecord::Schema.define(:version => 20110303183433) do
 
   create_table "access_code_requests", :force => true do |t|
     t.string   "email"
     t.datetime "code_sent_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
   end
 
   add_index "access_code_requests", ["email"], :name => "index_access_code_requests_on_email"
@@ -29,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20100206000906) do
     t.integer  "use_limit",  :default => 1,     :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "sent_to"
   end
 
   add_index "access_codes", ["code"], :name => "index_access_codes_on_code"
@@ -80,6 +82,52 @@ ActiveRecord::Schema.define(:version => 20100206000906) do
   add_index "comments", ["commentable_id", "commentable_type"], :name => "index_comments_on_commentable_id_and_commentable_type"
   add_index "comments", ["user_id"], :name => "index_comments_on_user_id"
 
+  create_table "content_permissions", :force => true do |t|
+    t.integer  "content_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "content_permissions", ["content_id", "user_id"], :name => "index_content_permissions_on_content_id_and_user_id"
+
+  create_table "content_translations", :force => true do |t|
+    t.integer  "content_id"
+    t.string   "title"
+    t.text     "body"
+    t.string   "locale"
+    t.boolean  "user_edited", :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "content_translations", ["content_id"], :name => "index_content_translations_on_content_id"
+  add_index "content_translations", ["locale"], :name => "index_content_translations_on_locale"
+
+  create_table "contents", :force => true do |t|
+    t.integer  "creator_id"
+    t.string   "title"
+    t.text     "body"
+    t.string   "locale"
+    t.text     "body_raw"
+    t.integer  "contentable_id"
+    t.string   "contentable_type"
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.boolean  "is_public"
+    t.string   "state"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "layout"
+    t.integer  "comment_count",    :default => 0
+    t.string   "cached_slug"
+  end
+
+  add_index "contents", ["cached_slug"], :name => "index_contents_on_cached_slug"
+  add_index "contents", ["creator_id"], :name => "index_contents_on_creator_id"
+  add_index "contents", ["parent_id"], :name => "index_contents_on_parent_id"
+
   create_table "countries", :force => true do |t|
     t.string  "name",         :limit => 128, :default => "",   :null => false
     t.string  "abbreviation", :limit => 3,   :default => "",   :null => false
@@ -88,6 +136,17 @@ ActiveRecord::Schema.define(:version => 20100206000906) do
 
   add_index "countries", ["abbreviation"], :name => "index_countries_on_abbreviation"
   add_index "countries", ["name"], :name => "index_countries_on_name"
+
+  create_table "friends", :force => true do |t|
+    t.integer  "inviter_id"
+    t.integer  "invited_id"
+    t.integer  "status",     :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "friends", ["invited_id", "inviter_id"], :name => "index_friends_on_invited_id_and_inviter_id"
+  add_index "friends", ["inviter_id", "invited_id"], :name => "index_friends_on_inviter_id_and_invited_id"
 
   create_table "languages", :force => true do |t|
     t.string  "name"
@@ -136,13 +195,14 @@ ActiveRecord::Schema.define(:version => 20100206000906) do
   end
 
   create_table "shares", :force => true do |t|
-    t.string   "uri",           :limit => 2083, :default => "", :null => false
+    t.string   "uri",            :limit => 2083, :default => "", :null => false
     t.string   "title"
     t.text     "message"
-    t.integer  "shared_by_id",                                  :null => false
+    t.integer  "shared_by_id",                                   :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "comment_count",                 :default => 0
+    t.integer  "comment_count",                  :default => 0
+    t.string   "shared_by_type"
   end
 
   add_index "shares", ["shared_by_id"], :name => "index_shares_on_shared_by_id"
@@ -157,6 +217,33 @@ ActiveRecord::Schema.define(:version => 20100206000906) do
   add_index "states", ["abbreviation"], :name => "index_states_on_abbreviation"
   add_index "states", ["country_id"], :name => "index_states_on_country_id"
   add_index "states", ["name"], :name => "index_states_on_name"
+
+  create_table "uploads", :force => true do |t|
+    t.integer  "creator_id"
+    t.string   "name"
+    t.string   "caption",             :limit => 1000
+    t.text     "description"
+    t.boolean  "is_public",                           :default => true
+    t.integer  "uploadable_id"
+    t.string   "uploadable_type"
+    t.string   "width"
+    t.string   "height"
+    t.string   "local_file_name"
+    t.string   "local_content_type"
+    t.integer  "local_file_size"
+    t.datetime "local_updated_at"
+    t.string   "remote_file_name"
+    t.string   "remote_content_type"
+    t.integer  "remote_file_size"
+    t.datetime "remote_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "uploads", ["creator_id"], :name => "index_uploads_on_creator_id"
+  add_index "uploads", ["local_content_type"], :name => "index_uploads_on_local_content_type"
+  add_index "uploads", ["uploadable_id"], :name => "index_uploads_on_uploadable_id"
+  add_index "uploads", ["uploadable_type"], :name => "index_uploads_on_uploadable_type"
 
   create_table "users", :force => true do |t|
     t.string   "login"

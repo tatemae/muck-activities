@@ -20,6 +20,7 @@
   <% end %>
 </div>
 <% content_for :javascript do -%>
+<script type="text/javascript" language="JavaScript">
   jQuery(document).ready(function() {
     jQuery('#status_update').click(function(){
       jQuery('#status-update-field').removeClass('status-update-dim');
@@ -32,4 +33,5 @@
       return true;
     });
   });
+</script>
 <% end -%>
