@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{muck-activities}
-  s.version = "3.2.1"
+  s.name = "muck-activities"
+  s.version = "3.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2011-09-14}
-  s.description = %q{Activity engine for the muck system.}
-  s.email = %q{justin@tatemae.com}
+  s.date = "2011-10-31"
+  s.description = "Activity engine for the muck system."
+  s.email = "justin@tatemae.com"
   s.extra_rdoc_files = [
     "README.rdoc"
   ]
@@ -2240,10 +2240,10 @@ Gem::Specification.new do |s|
     "test/spec/spec_helper.rb",
     "test/test/fixtures/rails.png"
   ]
-  s.homepage = %q{http://github.com/tatemae/muck-activities}
+  s.homepage = "http://github.com/tatemae/muck-activities"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Activity engine for the muck system}
+  s.rubygems_version = "1.8.10"
+  s.summary = "Activity engine for the muck system"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
