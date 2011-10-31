@@ -111,7 +111,7 @@ module MuckActivityHelper
   
   def get_profile_activities(activities_object)
     if !params[:latest_activity_id].blank?
-      activities_object.activities.by_latest.filter_by_template(params[:activity_filter]).after(params[:latest_activity_id]).is_public.created_by(activities_object).find(:all, :include => ['comments']).paginate(:page => @page, :per_page => @per_page)
+      activities_object.activities.by_latest.filter_by_template(params[:activity_filter]).after(params[:latest_activity_id]).is_public.created_by(activities_object).includes(:comments).paginate(:page => @page, :per_page => @per_page)
     else
       activities_object.activities.by_latest.filter_by_template(params[:activity_filter]).is_public.created_by(activities_object).includes(:comments).paginate(:page => @page, :per_page => @per_page)
     end
